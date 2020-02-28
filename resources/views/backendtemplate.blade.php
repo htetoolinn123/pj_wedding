@@ -329,7 +329,7 @@
         <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
-         @yield('mid')
+         @yield('content')
         <!-- /.container-fluid -->
 
       </div>

@@ -27,6 +27,8 @@ Route::get('/', function () {
 
   Route::get('/','FrontendController@main');
 
+  Route::resource('items','ItemController');
+
   
 
 
