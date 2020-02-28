@@ -3,7 +3,7 @@
    
 @extends('backendtemplate')   
 
-@section('mid') 
+@section('content') 
 
 
 <div class="container-fluid">
@@ -12,7 +12,7 @@
 		<div class="col-lg-12">
 
 
-			<div style="float:right;">
+			<div style="float:right; margin-bottom: 20px;">
  			<a href="{{route('service.create')}}" class="btn btn-info">Add New
  				 </a>
  		    </div>
@@ -62,8 +62,8 @@
  				 		<td>
  				 			
                            
- 				 			<a href="{{route('service.edit',$row->id)}}" class="btn btn-warning">
- 				 			Edit</a>
+ 				 			<div><a href="{{route('service.edit',$row->id)}}" class="btn btn-warning">
+ 				 			Edit</a></div>
 
                             <form method="POST" action="{{route('service.destroy',$row->id)}}"
                             	onsubmit="return confirm('Are you shour???')">

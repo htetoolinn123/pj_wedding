@@ -1,18 +1,20 @@
    
 @extends('backendtemplate')   
 
-@section('mid') 
+@section('content') 
 
 <div class="container">
   <div class="row">
-    <div class="col-lg-12 col-md-12 col-sm-12">
-      
-    
-      <div style="float: right;">
-      <a href="{{route('service.index')}}" class="btn btn-warning"><h3>Go=>back=></h3>
+
+    <div class="col-lg-12">
+
+
+      <div style="float:right; margin-bottom: 20px;">
+      <a href="{{route('service.index')}}" class="btn btn-info">Go back
          </a>
-       </div>
+        </div>
     </div>
+    
 
     <div class="col-lg-12">
 

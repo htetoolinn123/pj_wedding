@@ -3,7 +3,7 @@
    
 @extends('backendtemplate')   
 
-@section('mid') 
+@section('content') 
 
 
 <div class="container-fluid">
