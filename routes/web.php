@@ -27,7 +27,10 @@ Route::get('/', function () {
 
   Route::get('/','FrontendController@main');
 
+
   Route::resource('items','ItemController');
+
+   Route::resource('/service','ServiceController');
 
   
 

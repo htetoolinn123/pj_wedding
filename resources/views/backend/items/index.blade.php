@@ -30,7 +30,6 @@
 			<tr>
 				<td>No</td>
 				<td>Name</td>
-				<td>Photo</td>
 				<td>Price</td>		
 				<td>Service</td>
 				<td>Action</td>
@@ -42,7 +41,6 @@
 			<tr>
 				<td>{{$i++}}</td>
 				<td>{{$row->name}}</td>
-				<td>{{$row->photo}}</td>
 				<td>{{$row->price}}</td>
 				<td>{{$row->service->name}}</td>
 				<td>

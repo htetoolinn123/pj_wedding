@@ -14,6 +14,7 @@ class ItemController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
+
     {
         $items =Item::all();
         return view('backend.items.index',compact('items'));
@@ -26,8 +27,9 @@ class ItemController extends Controller
      */
     public function create()
     {
+        $items = Item::all();
         $services = Service::all();
-        return view('backend.items.create',compact('services'));
+        return view('backend.items.create',compact('services','items'));
     }
 
     /**
@@ -38,6 +40,7 @@ class ItemController extends Controller
      */
     public function store(Request $request)
     {
+
         $request->validate([
         "name"      => 'required|min:5|max:191',
         "photo"      => 'sometimes|mimes:jpeg,jpg,png',
@@ -50,14 +53,14 @@ class ItemController extends Controller
             $upload_dir = public_path().'/storage/item/';
             $name = time().'.'.$photo->getClientOriginalExtension();
             $photo->move($upload_dir,$name);
-            $path = '/storage/mentor/'.$name;
+            $path = '/storage/item/'.$name;
         }
-
         $item = new Item;
         $item->name = request('name');
         $item->photo = $path;
         $item->price = request('price');
         $item->service_id = request('service');
+        $item->save();
 
         // return redirected //5
         return redirect()->route('items.index');
@@ -72,7 +75,8 @@ class ItemController extends Controller
      */
     public function show($id)
     {
-
+        $item = Item::find($id);
+        return view('backend.items.show',compact('item'));
     }
 
     /**
@@ -83,7 +87,9 @@ class ItemController extends Controller
      */
     public function edit($id)
     {
-        //
+        $services = Service::all();
+        $item = Item::find($id);
+        return view('backend.items.edit',compact('item','services'));
     }
 
     /**
@@ -95,7 +101,32 @@ class ItemController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+        "name"      => 'required|min:5|max:191',
+        "photo"      => 'sometimes|mimes:jpeg,jpg,png',
+        "price"      => 'required',
+        "service"    => 'required'
+        ]);
+
+        if ($request->hasfile('photo')){
+            $photo = $request->file('photo');
+            $upload_dir = public_path().'/storage/item/';
+            $name = time().'.'.$photo->getClientOriginalExtension();
+            $photo->move($upload_dir,$name);
+            $path = '/storage/item/'.$name;
+        }
+        else{
+            $path = request('oldphoto');
+        }
+        $item =  Item::find($id);
+        $item->name = request('name');
+        $item->photo = $path;
+        $item->price = request('price');
+        $item->service_id = request('service');
+        $item->save();
+
+        // return redirected //5
+        return redirect()->route('items.index');
     }
 
     /**
@@ -106,6 +137,8 @@ class ItemController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $item = Item::find($id);
+        $item->delete();
+        return redirect()->route('items.index',compact('item'));
     }
 }
