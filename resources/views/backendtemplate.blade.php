@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -63,7 +63,7 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Service&Items</h6>
-            <a class="collapse-item" href="{{route('service.index')}}">Service</a>
+            <a class="collapse-item" href="{{route('services.index')}}">Service</a>
             <a class="collapse-item" href="{{route('items.index')}}">Items</a>
           </div>
         </div>
