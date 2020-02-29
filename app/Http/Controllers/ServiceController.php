@@ -25,6 +25,7 @@ class ServiceController extends Controller
      */
     public function create()
     {
+
         return view('backend.services.create');
     }
 
@@ -49,7 +50,7 @@ class ServiceController extends Controller
 
         //return --.5
 
-        return redirect()->route('service.index');
+        return redirect()->route('services.index');
 
     }
 

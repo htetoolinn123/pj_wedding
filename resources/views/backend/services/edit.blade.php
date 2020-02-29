@@ -12,9 +12,10 @@
             <label for="name" class="col-sm-2 col-form-label"> Name </label>
               
               <div class="col-sm-10">
+              
                   <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" placeholder="Enter Trainer Name" name="name" value="{{$service->name}}">
 
-                  @error('name')
+              @error('name')
                   <div class="alert alert-danger">{{ $message }}</div>
               @enderror
               </div>
@@ -31,5 +32,6 @@
         </form>
 
   </div>
+
 
  @endsection

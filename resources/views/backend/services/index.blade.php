@@ -1,6 +1,9 @@
+
 @extends('backendtemplate')
 
 @section('content')
+
+
 <div class="container-fluid mt-4">
 
 	<h1 class="h3 mb-4 text-gray-800">
@@ -55,6 +58,7 @@
 			</tr>
 			@endforeach
 		</tbody>
+
 		
 	</table>
 </div>

@@ -11,15 +11,15 @@
             <label for="name" class="col-sm-2 col-form-label"> Name </label>
               
               <div class="col-sm-10">
+              
                   <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" placeholder="Enter Service Name" name="name">
 
                   @error('name')
                   <div class="alert alert-danger">{{ $message }}</div>
-              @enderror
+                  @enderror
               </div>
           </div>
           <div class="form-group row">
-            <div class="col-sm-2"></div>
               <div class="col-sm-10">
                 <button type="submit" class="btn btn-primary">
                   <i class="fa fa-save"></i> Save
@@ -27,8 +27,10 @@
               </div>
           </div>
 
-        </form>
 
-  </div>
+   </form>
+ </div>
+
+
 
  @endsection
