@@ -3,10 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Package;
 use App\Service;
-
-class ServiceController extends Controller
+class PackageController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +13,9 @@ class ServiceController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {       $services=Service::all();
-        return view('backend.services.index',compact('services'));
+    {
+        $packages = Package::all();
+        return view('backend.packages.index',compact('packages'));
     }
 
     /**
@@ -25,8 +25,8 @@ class ServiceController extends Controller
      */
     public function create()
     {
-
-        return view('backend.services.create');
+        $services = Service::all();
+        return view('backend.packages.create',compact('services'));
     }
 
     /**
@@ -37,21 +37,18 @@ class ServiceController extends Controller
      */
     public function store(Request $request)
     {
-       // dd($request);
+        $request->validate([
+            "name"=>"required|min:3|max:191",
+            "service"=>"required"
+        ]);
 
-         $request->validate([
-        "name"=>'required|min:5/max:191',]);
+        $package = new Package;
+        $package->name = request('name');
+        $package->save();
 
-         $service=new Service;
-        $service->name=request('name');
+        $package->services()->attach(request('service'));
 
-
-         $service->save();
-
-        //return --.5
-
-        return redirect()->route('services.index');
-
+        return redirect()->route('packages.index');
     }
 
     /**
@@ -73,11 +70,7 @@ class ServiceController extends Controller
      */
     public function edit($id)
     {
-       
-
-         $service=Service:: find($id);
-     return view('backend.services.edit',compact('service'));
-   
+        //
     }
 
     /**
@@ -89,23 +82,7 @@ class ServiceController extends Controller
      */
     public function update(Request $request, $id)
     {
-       // dd($request);
-
-
-         $request->validate([
-        "name"=>'required|min:5/max:191',]);
-
-         $service=Service::find($id);
-        
-        $service->name=request('name');
-
-
-         $service->save();
-
-        //return --.5
-
-        return redirect()->route('services.index');
-
+        //
     }
 
     /**
@@ -116,9 +93,6 @@ class ServiceController extends Controller
      */
     public function destroy($id)
     {
-        $service=Service::find($id);
-        $service->delete();
-
-         return redirect()->route('services.index');
+        //
     }
 }
