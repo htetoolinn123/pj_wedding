@@ -4,7 +4,7 @@
 	<div class="container-fluid">
 		<h1 class="h3 mb-4 text-gray-800">
 	  		<i class="fas fa-info-circle pr-3"></i> 
-	  		Mentor Details 
+	  		Item Details 
 	  	</h1>
 
 		<div class=" mb-4">
