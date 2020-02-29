@@ -25,9 +25,12 @@ Route::get('/', function () {
 
   Route::get('/dashboard','BackendController@dashboard');
 
-  Route::get('/','FrontendController@main');
+  Route::get('/','FrontendController@main')->name('main');
 
-    Route::resource('/service','ServiceController');
+
+  Route::resource('/items','ItemController');
+
+   Route::resource('/service','ServiceController');
 
   
 

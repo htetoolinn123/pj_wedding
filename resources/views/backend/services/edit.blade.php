@@ -3,61 +3,46 @@
 
 @section('content') 
 
-<div class="container">
-  <div class="row">
 
-    <div class="col-lg-12">
+<div class="container-fluid mt-3">
+      <h2 class="text-center">Service Edit Form</h2>
 
+              <form action="{{route('service.update',$service->id)}}" method="POST" enctype="multipart/form-data" class="mt-4">
+                @csrf
+                @method('PUT')
+                
+            
+                <div class="form-group row">
+            <label for="name" class="col-sm-2 col-form-label"> Name </label>
+              
+              <div class="col-sm-8">
+                  <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" placeholder="Enter Trainer Name" name="name" value="{{$service->name}}">
 
-      <div style="float:right; margin-bottom: 20px;">
-      <a href="{{route('service.index')}}" class="btn btn-info">Go back
-         </a>
-        </div>
-    </div>
-    
-
-    <div class="col-lg-12">
-
-      <div class="card-header py-3" style="background-color:skyblue;">
-      <h4 class="m-0 font-weight-bold text-primary">
-        Edit Service
-      </h4>
-        </div>
-
-
-
-
-
-      <form method="POST" action="{{route('service.update',$service->id)}}" enctype="multipart/form-data">
-
-        @csrf
-
-          @method('PUT')
-
-        <!--comment  -->
-
-              <div class="form-group">
-
-              <label for="exampleInputEmail1">Name</label>
-              <input type="text" class="form-control @error('name') is-invalid @enderror" id="exampleInputEmail1" name="name" value="{{$service->name}}">
-
-              @error('name')
-    <div class="alert alert-danger">{{ $message }}</div>
+                  @error('name')
+                  <div class="alert alert-danger">{{ $message }}</div>
               @enderror
-         
               </div>
+          </div>
 
-
-           
-
-
-               <button type="submit" class="btn btn-primary">Save</button>
-            </form>
+         
 
 
 
-    </div>
-  </div>
-</div>
+          
+
+          <div class="form-group row">
+            <div class="col-sm-2"></div>
+              <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary">
+                  <i class="fa fa-save"></i> Save
+                </button>
+              </div>
+          </div>
+
+        </form>
+
+          </div>
+
+
 
  @endsection

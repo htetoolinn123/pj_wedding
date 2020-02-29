@@ -1,97 +1,84 @@
 
 
-   
+
 @extends('backendtemplate')   
 
 @section('content') 
 
 
-<div class="container-fluid">
-	<div class="row">
+<div class="container-fluid mt-4">
 
-		<div class="col-lg-12">
+	<h1 class="h3 mb-4 text-gray-800">
+	  		<i class="fas fa-list-alt pr-3"></i> 
+	  		Service List
+	  	</h1>
 
+		<div class=" mb-4">
+			<div class="card-header py-3">
+	            <div class="row">
+					<div class="col-10">
+						<h4 class="m-0 font-weight-bold text-primary"> 
+			            	List 
+			            </h4>
+					</div>
 
-			<div style="float:right; margin-bottom: 20px;">
- 			<a href="{{route('service.create')}}" class="btn btn-info">Add New
- 				 </a>
- 		    </div>
-		</div>
+					<div class="col-2">
+						<a href="{{route('service.create')}}" class="btn btn-primary btn-block float-right"> 
+		            		<i class="fa fa-plus pr-2"></i>	Add New 
+		            	</a>
+					</div>
+				</div>
+	        </div>
 
+	<table class="table text-left table-hover table-inverse text-center table-bordered mt-3">
+		
+			<thead style="color: skyblue;text-align: center;">
+				<tr>
+			    	<th>No</th>
+					<th>Name</th>
+					<th>Action</th>
+								
+				</tr>
+			</thead>
 
-		<div class="col-lg-12">
+			<tbody style="text-align: center;">
 
-			
-<!-- table -->
- 	<div class="card shadow mb-4">
- 		<div class="card-header py-3" style="background-color:skyblue;">
- 			<h4 class="m-0 font-weight-bold text-primary">
- 				Service Information
- 			</h4>
- 		</div>
+							@php $i=1; @endphp
 
- 		<div class="card-body">
- 			<div class="table-responsive">
- 				<table class="table table-bordered" id="dataTable"
- 				 width="100" cellspacing="0">
-
-
- 				 <thead style="color: skyblue;text-align: center;">
- 				 	<tr>
- 				 		<th>No</th>
- 				 		<th>Name</th>
- 				 		<th>Action</th>
- 				 		
- 				 	</tr>
- 				 </thead>
-
-
- 				 <tbody style="text-align: center;">
-
- 				 	@php $i=1; @endphp
-
- 				 	@foreach($service as $row)
+							@foreach($service as $row)
 
 
- 				 	<tr>
- 				 		<td>{{($i++)}}</td>
- 				 		<td>{{($row->name)}}</td>
-
- 				 		
-
- 				 		<td>
- 				 			
-                           
- 				 			<div><a href="{{route('service.edit',$row->id)}}" class="btn btn-warning">
- 				 			Edit</a></div>
-
-                            <form method="POST" action="{{route('service.destroy',$row->id)}}"
-                            	onsubmit="return confirm('Are you shour???')">
-                            	@csrf
-                            	@method('DELETE')
- 				 			<button type="submit" class="btn btn-danger">
- 				 			Delete</button>
-
- 				 		   </form>
- 				 		</td>
- 				 	</tr>
- 				 	@endforeach
- 				 </tbody>
+							<tr>
+								<td>{{($i++)}}</td>
+								<td>{{($row->name)}}</td>
+								<td>
 
 
+                                <form method="POST" action="{{route('service.destroy',$row->id)}}" onsubmit="return confirm('Are you sure?')">
+								@csrf
+								@method('DELETE')
+							
+							<a href="{{route('service.edit',$row->id)}}" class="btn btn-warning">
+								<i class="fas fa-edit"></i>
+							</a>
+							<button class="btn btn-danger">
+								<i class="fas fa-trash"></i>
+							</button>
+							</form>
 
- 				
 
- 				</table>
- 			</div>
- 		</div>
- 	</div>
+								
+								</td>
+							</tr>
+							@endforeach
+			</tbody>
 
-  <!-- table-close -->
 
- </div>  <!-- columm -->
-</div>  <!-- row -->
- </div><!-- container-fluid -->
+		
+		
+	</table>
+</div>
+</div>
 
 
 
