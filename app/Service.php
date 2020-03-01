@@ -12,4 +12,10 @@ class Service extends Model
    {
    		return $this->hasMany('App\Item');
    }
+
+   public function packages($value='')
+   {
+   		return $this->belongsToMany('App\Package')
+   					->withTimestamps();
+   }
 }

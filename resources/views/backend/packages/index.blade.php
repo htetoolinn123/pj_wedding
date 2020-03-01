@@ -5,7 +5,7 @@
 
 	<h1 class="h3 mb-4 text-gray-800">
 	  		<i class="fas fa-list-alt pr-3"></i> 
-	  		Item List
+	  		Package List
 	  	</h1>
 
 		<div class=" mb-4">
@@ -18,7 +18,7 @@
 					</div>
 
 					<div class="col-2">
-						<a href="{{route('items.create')}}" class="btn btn-primary btn-block float-right"> 
+						<a href="{{route('packages.create')}}" class="btn btn-primary btn-block float-right"> 
 		            		<i class="fa fa-plus pr-2"></i>	Add New 
 		            	</a>
 					</div>
@@ -28,28 +28,23 @@
 	<table class="table text-left table-hover table-inverse text-center table-bordered mt-3">
 		<thead>
 			<tr>
-				<td>No</td>
-				<td>Name</td>
-				<td>Photo</td>
-				<td>Price</td>		
-				<td>Service</td>
-				<td>Action</td>
+				<th width="200px">No</th>
+				<th>Package Name</th>
+				<th width="200px">Action</th>
+								
 			</tr>
 		</thead>
 		<tbody>
 			@php $i=1; @endphp
-			@foreach($items as $row)
+			@foreach($packages as $row)
 			<tr>
-				<td>{{$i++}}</td>
-				<td>{{$row->name}}</td>
-				<td><img src="{{$row->photo}}" class="img-fluid" style="width: 70px; height: 70px;"></td>
-				<td>{{$row->price}}</td>
-				<td>{{$row->service->name}}</td>
+				<td>{{($i++)}}</td>
+				<td>{{($row->name)}}</td>
 				<td>
-					<form method="POST" action="{{route('items.destroy',$row->id)}}" onsubmit="return confirm('Are you sure?')">
+					<form method="POST" action="{{route('packages.destroy',$row->id)}}" onsubmit="return confirm('Are you sure?')">
 								@csrf
 								@method('DELETE')
-							<a href="{{route('items.edit',$row->id)}}" class="btn btn-warning">
+							<a href="{{route('packages.edit',$row->id)}}" class="btn btn-warning">
 								<i class="fas fa-edit"></i>
 							</a>
 							<button class="btn btn-danger">
@@ -65,3 +60,4 @@
 </div>
 </div>
 @endsection
+

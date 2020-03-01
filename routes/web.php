@@ -30,7 +30,12 @@ Route::get('/', function () {
 
   Route::resource('/items','ItemController');
 
+
    Route::resource('/services','ServiceController');
+
+
+  Route::resource('/packages','PackageController');
+
 
   
 

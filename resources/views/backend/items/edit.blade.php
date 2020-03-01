@@ -41,7 +41,7 @@
 						<label for="name" class="col-sm-2 col-form-label"> Name </label>
 				    	
 				    	<div class="col-sm-10">
-				      		<input type="text" class="form-control @error('name') is-invalid @enderror" id="name" placeholder="Enter Trainer Name" name="name" value="{{$item->name}}">
+				      		<input type="text" class="form-control @error('name') is-invalid @enderror" id="name" placeholder="Enter Items Name" name="name" value="{{$item->name}}">
 
 				      		@error('name')
 							    <div class="alert alert-danger">{{ $message }}</div>
