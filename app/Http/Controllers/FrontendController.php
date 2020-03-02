@@ -10,4 +10,15 @@ class FrontendController extends Controller
     {
         return view('frontend.main');
     }
+
+
+     public function about()
+    {
+        return view('frontend.about');
+    }
+
+     public function partner()
+    {
+        return view('frontend.partner');
+    }
 }

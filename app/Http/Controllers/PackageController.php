@@ -70,7 +70,9 @@ class PackageController extends Controller
      */
     public function edit($id)
     {
-        //
+        $services = Service::all();
+        $package = Package::find($id);
+        return view('backend.packages.edit',compact('services','package'));
     }
 
     /**
@@ -82,7 +84,18 @@ class PackageController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            "name"=>"required|min:3|max:191",
+            "service"=>"required"
+        ]);
+
+        $package =  Package::find($id);
+        $package->name = request('name');
+        $package->save();
+
+        $package->services()->detach(request('service'));
+
+        return redirect()->route('packages.index');
     }
 
     /**
@@ -93,6 +106,8 @@ class PackageController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $package = Package::find($id);
+        $package->delete();
+        return redirect()->route('packages.index');
     }
 }

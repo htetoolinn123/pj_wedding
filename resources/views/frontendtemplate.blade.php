@@ -61,7 +61,8 @@
               <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav ml-auto ">
                   <li class="active"><a href="{{route('main')}}" class="nav-link">Home</a></li>
-                  <li><a href="about.html" class="nav-link">About</a></li>
+                  <li><a href="{{route('about')}}" class="nav-link">About</a></li>
+                  <li><a href="{{route('partner')}}" class="nav-link">WEDDING PACKAGES</a></li>
                   <li><a href="photography.html" class="nav-link">Photography</a></li>
                   <li><a href="event.html" class="nav-link">Event</a></li>
                   <li><a href="contact.html" class="nav-link">Contact</a></li>
@@ -85,7 +86,7 @@
             <div class="border-top pt-5">
               <p>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="http://kowaiyantun.me/" target="_blank" >Perfect</a>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
             </div>
