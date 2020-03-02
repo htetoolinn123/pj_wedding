@@ -17,7 +17,7 @@
 	    </div>
 	    <div class="form-group col-md-6">
 	      <label for="inputPassword4">Chosse Service</label>
-		    <select name="service" class="form-control @error('service') is-invalid @enderror">
+		    <select class="js-example-basic-multiple form-control " name="service[]" multiple="multiple">
 	    		@foreach($services as $row)
 		    		<option value="{{$row->id}}">{{$row->name}}
 		    		</option>
@@ -40,4 +40,13 @@
 	</form>
  </div>
 
+@endsection
+
+@section('script')
+		<script >
+		$(document).ready(function() {
+		    $('.js-example-basic-multiple').select2();
+		});
+
+		</script>
 @endsection

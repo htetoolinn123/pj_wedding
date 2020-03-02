@@ -10,4 +10,9 @@ class FrontendController extends Controller
     {
         return view('frontend.main');
     }
+
+     public function blog()
+    {
+        return view('frontend.blog');
+    }
 }
