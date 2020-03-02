@@ -21,7 +21,7 @@
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="{{asset('sb-user/css/style.css')}}">
-
+    <link rel="stylesheet" href="{{asset('sb-user/style.css')}}">
   </head>
 
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -46,8 +46,10 @@
           <div class="row align-items-center position-relative">
 
             <div class="col-3 ">
-              <div class="site-logo">
-                <a href="index.html" class="font-weight-bold">Capture</a>
+              <div class="site-logo navbar-brand">
+                <a href="index.html" class="font-weight-bold">
+                  <img src="{{asset('sb-user/images/logo.png')}}" class="img-fluid" width="70px">PERFECT
+                </a>
               </div>
             </div>
 
@@ -77,10 +79,10 @@
 
     @yield('content')
 
-    <footer class="modal-footer">
+    <footer class="modal-footer mt-5">
       <div class="container">
         
-        <div class="row mt-5 text-center">
+        <div class="row text-center">
           <div class="col-md-12">
             <div class="border-top pt-5">
               <p>
