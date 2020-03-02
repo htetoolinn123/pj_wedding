@@ -44,6 +44,10 @@
 					<form method="POST" action="{{route('packages.destroy',$row->id)}}" onsubmit="return confirm('Are you sure?')">
 								@csrf
 								@method('DELETE')
+
+							<a href="{{route('packages.show',$row->id)}}" class="btn btn-info">
+								<i class="fas fa-info"></i>
+							</a>
 							<a href="{{route('packages.edit',$row->id)}}" class="btn btn-warning">
 								<i class="fas fa-edit"></i>
 							</a>

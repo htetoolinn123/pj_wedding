@@ -4,7 +4,7 @@
 
 
 <div class="container mt-5 pt-5">
-	<div class="mt-5">
+	<div class="mt-5 pt-4">
 		<h5 > 1. Marry ဆိုတာ ဘာလဲ ?</h5>
 		<p> Marry ဆိုတာ ဗီယက်နမ်နိုင်ငံ ရဲ့ လက်ထပ်ခြင်းနဲ့ ပတ်သက်တဲ့ အကြီးဆုံးအဖွဲ့အစည်းတစ်ခုဖြစ်ပါတယ်။
 			ဒီ အဖွဲ့အစည်းထဲမှာ Marry , Marry baby , The Family Kicten စတဲ့ အဖွဲ့အစည်းများ ထပ်မံပါဝင်ပြီး

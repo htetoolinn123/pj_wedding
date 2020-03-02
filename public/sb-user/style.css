@@ -1,0 +1,16 @@
+.img
+{
+	border-radius: 10px;
+}
+
+.hr{
+	max-width: 3.25rem;
+    border-color: #F9A405;
+    border-width: .2em;
+    margin-top: 40px;
+}
+.p{
+	font-weight: bold;
+	text-align: justify;
+	font-size: 20px;
+}

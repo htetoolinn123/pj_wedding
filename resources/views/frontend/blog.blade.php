@@ -3,8 +3,8 @@
 @section('content')
 
 <div class="container mt-5 pt-5">
-	<div class="card-deck mt-5">
-		<div class="card">
+	<div class="card-deck mt-5 pt-4">
+		<div class="card col-lg-4">
 			<img src="{{asset('sb-user/images/ring.jpg')}}" class="card-img-top" alt="...">
 			<div class="card-body">
 				<h5 class="card-title">သမိုင်းကြောင်းနက်နဲခဲ့တဲ့ လက်ထပ်လက်စွပ်မျာ</h5>
@@ -13,7 +13,7 @@
 				<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 			</div>
 		</div>
-		<div class="card">
+		<div class="card col-lg-4">
 			<img src="{{asset('sb-user/images/couple.jpg')}}" class="card-img-top" alt="...">
 			<div class="card-body">
 				<h5 class="card-title">မိမိ crush နေသောကောင်မလေးဆီမှ အမှတ်ယူနည်း သုံးနည်</h5>
@@ -23,7 +23,7 @@
 				<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 			</div>
 		</div>
-		<div class="card">
+		<div class="card col-lg-4">
 			<img src="{{asset('sb-user/images/hand.jpg')}}" class="card-img-top" alt="...">
 			<div class="card-body">
 				<h5 class="card-title"> မိန်းကလေးများအတွက် စေ့စပ်အပြီး Relationship ထိန်းသိမ်းနည်းမျာ</h5>
@@ -34,8 +34,8 @@
 	</div>
 
 	<br><br>
-	<div class="row row-cols-1 row-cols-md-2">
-		<div class="col mb-4">
+	<div class="row">
+		<div class="col-sm-3 mb-3">
 			<div class="card">
 				<img src="{{asset('sb-user/images/marry.jpg')}}" class="card-img-top" alt="...">
 				<div class="card-body">
@@ -44,7 +44,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col mb-4">
+		<div class="col-sm-3 mb-3">
 			<div class="card">
 				<img src="{{asset('sb-user/images/beauty.jpg')}}" class="card-img-top" alt="...">
 				<div class="card-body">
@@ -53,7 +53,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col mb-4">
+		<div class="col-sm-3 mb-3">
 			<div class="card">
 				<img src="{{asset('sb-user/images/couples.jpg')}}" class="card-img-top" alt="...">
 				<div class="card-body">
@@ -62,7 +62,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col mb-4">
+		<div class="col-sm-3 mb-3">
 			<div class="card">
 				<img src="{{asset('sb-user/images/choose.jpg')}}" class="card-img-top" alt="...">
 				<div class="card-body">
@@ -77,7 +77,7 @@
 	<br><br>
 
 	<div class="row row-cols-1 row-cols-md-2">
-		<div class="col mb-4">
+		<div class="col-sm-3 mb-3">
 			<div class="card">
 				<img src="{{asset('sb-user/images/memo.jpg')}}" class="card-img-top" alt="...">
 				<div class="card-body">
@@ -86,7 +86,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col mb-4">
+		<div class="col-sm-3 mb-3">
 			<div class="card">
 				<img src="{{asset('sb-user/images/honey.jpg')}}" class="card-img-top" alt="...">
 				<div class="card-body">
@@ -95,7 +95,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col mb-4">
+		<div class="col-sm-3 mb-3">
 			<div class="card">
 				<img src="{{asset('sb-user/images/help.jpg')}}" class="card-img-top" alt="...">
 				<div class="card-body">
@@ -104,7 +104,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col mb-4">
+		<div class="col-sm-3 mb-3">
 			<div class="card">
 				<img src="{{asset('sb-user/images/choose.jpg')}}" class="card-img-top" alt="...">
 				<div class="card-body">
