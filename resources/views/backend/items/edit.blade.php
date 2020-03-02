@@ -69,8 +69,7 @@
 				    	<div class="col-sm-10">
 				      		<select name="service" class="form-control">
 				    		@foreach($services as $row)
-					    		<option value="{{$row->id}}" @if($item->service_id == 
-					    			$row->id){{'selected'}} @endif>{{$row->name}}
+					    		<option value="{{$row->id}}" @if($item->service_id == $row->id){{'selected'}} @endif>{{$row->name}}
 					    		</option>
 				    		@endforeach
 				    	</select>
