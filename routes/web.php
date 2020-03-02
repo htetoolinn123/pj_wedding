@@ -30,6 +30,9 @@ Route::get('/', function () {
 
   Route::get('/about','FrontendController@about')->name('about');
   Route::get('/blog','FrontendController@blog')->name('blog');
+  Route::get('/faq','FrontendController@faq')->name('faq');
+  Route::get('/about','FrontendController@about')->name('about');
+  Route::get('/photography','FrontendController@photography')->name('photography');
 
   
    Route::get('/partner','FrontendController@partner')->name('partner');
