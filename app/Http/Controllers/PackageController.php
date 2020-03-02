@@ -59,7 +59,9 @@ class PackageController extends Controller
      */
     public function show($id)
     {
-        //
+        $services = Service::all();
+        $package = Package::find($id);
+        return view('backend.packages.show',compact('package','services'));
     }
 
     /**

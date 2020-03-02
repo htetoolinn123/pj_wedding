@@ -36,45 +36,59 @@
 
     <hr class="hr">
 
-    <div class="container-fluid">
+    <div class="container-fluid" align="center">
       <div class="col-md-7 text-center mx-auto mt-5 pt-4">
           <h2 class="serif">Our Blogs</h2>
       </div>
-      <div class="row mt-2 ">
-          <div class="col-lg-3 col-md-6 col-sm-12">
-              <div class="card" style="width: 18rem;">
-                <img src="{{asset('sb-user/images/card1.jpg')}}" class="card-img-top" alt="...">
+      <div class="row mt-1">
+          <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+              <div class="card" style="width: 18rem; height: 450px;">
+                <img src="{{asset('sb-user/images/ring.jpg')}}" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <p class=" p card-title">မင်္ဂလာခန်းမအတွက် စရံမချခင်မှာ စုံတွဲလေးတို့ သတိထားရမှာတွေက</p>
-                  <p class="card-text">အပြင်ကနေ ထပ်ငှားတာမျိုး လုပ်လို့ မရဘဲ သူတို့ဝန်ဆောင်မှုကိုပဲ ယူရမယ်၊ ဝန်ဆောင်မှုကလည်း ကိုယ်မကြိုက်တာဆိုရင်တော့ ရှောင်တာ...</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <p class=" p card-title">သမိုင်းကြောင်းနက်နဲခဲ့တဲ့ လက်ထပ်လက်စွပ်များ</p>
+                  <p class="card-text">လွန်ခဲ့တဲ့နှစ်ပေါင်း ၅၀၀၀ လောက်က အီဂျစ်နိုင်ငံမှာ    လက်ထပ်လက်စွပ်တွေကို 
+                   ကျူပင်တွေ သားရေတွေနဲ့...</p>
+                  <a href="{{route('blog')}}" class="btn btn-primary">Go to Blog</a>
                 </div>
               </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 col-sm-12">
-              <div class="card" style="width: 18rem;">
-                <img src="{{asset('sb-user/images/card2.jpg')}}" class="card-img-top" alt="...">
+          <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+              <div class="card" style="width: 18rem; height: 450px;">
+                <img src="{{asset('sb-user/images/couple.jpg')}}" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <p class=" p card-title">သတို့သမီးလေးတို့ ထိုင်မသိမ်းကို ဘယ်အချိန်လောက်မှ စအပ်မလဲ</p>
-                  <p class="card-text">သတို့သမီးလေးတို့ (၃) လလောက် အလိုမှာတော့ ဒီဇိုင်း အသေးစိတ်ကို ဒီဇိုင်နာနဲ့ တိုင်ပင်ပါ။ ဒီဇိုင်နာက (၂) လလောက် အလိုမှ စပြီး ...</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <p class=" p card-title">မိမိ crush နေသောကောင်မလေးဆီမှ အမှတ်ယူနည်း သုံးနည်း</p>
+                  <p class="card-text">ပထမအချက်ကတော့ ကိုယ်crush နေတဲ့ကောင်မလေး ဆီကအဆက်အသွယ်လည်း ရှိနေခဲ့မယ်ဆိုရင်...</p>
+                  <a href="{{route('blog')}}" class="btn btn-primary">Go to Blog</a>
                 </div>
               </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 col-sm-12">
-              <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+           <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+              <div class="card" style="width: 18rem; height: 450px;">
+                <img src="{{asset('sb-user/images/marry.jpg')}}" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <p class=" p card-title">လက်ထပ်ဖို့ အကောင်းဆုံး အရွယ်</p>
+                  <p class="card-text">(၁)သင်ဟာရင့်ကျက်နေပါပြီ (၂)ပျော်ရွှင်မှုတွေကိုတစ်ယောက်တည်းခံစားပြီးပြီ (၃)ကလေးကိုပျိုးထောင်ဖို့နားလည်နေပြီ (၄) ငွေကြေးအတည်တကျရှိနေပြီ။</p>
+                  <a href="{{route('blog')}}" class="btn btn-primary">Go to Blog</a>
+                </div>
+              </div>
+          </div>
+
+           <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+              <div class="card" style="width: 18rem; height: 450px;">
+                <img src="{{asset('sb-user/images/hand.jpg')}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class=" p card-title">မိန်းကလေးများအတွက် စေ့စပ်အပြီး Relationship ထိန်းသိမ်းနည်းများ</p>
+                  <p class="card-text">ကျွန်တော်ကယောကျ်ားလေးဖြစ်တဲ့အတွက် Relationship ခိုင်မြဲ...</p>
+                  <a href="{{route('blog')}}" class="btn btn-primary">Go to Blog</a>
                 </div>
               </div>
           </div>
       </div>
     </div>
+
+    <hr class="hr">
 
     <div class="container-fluid">
           <div class="col-md-7 text-center mx-auto mt-5 pt-4">
