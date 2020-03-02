@@ -28,6 +28,8 @@ Route::get('/', function () {
   Route::get('/','FrontendController@main')->name('main');
 
   Route::get('/blog','FrontendController@blog')->name('blog');
+  Route::get('/faq','FrontendController@faq')->name('faq');
+  Route::get('/about','FrontendController@about')->name('about');
 
   
 
