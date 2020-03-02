@@ -16,11 +16,17 @@
 		@enderror
 	    </div>
 	    <div class="form-group col-md-6">
+	    	
 	      <label for="inputPassword4">Chosse Service</label>
+	    @php
+	    	$p = $package->services;
+	    @endphp
 		    <select class="js-example-basic-multiple form-control " name="service[]" multiple="multiple">
+		    
 	    		@foreach($services as $row)
-		    		<option value="{{$row->id}}" @if($package->service_id == 
-					    			$row->id){{'selected'}} @endif>{{$row->name}}
+		    		<option value="{{$row->id}}"
+		    			@foreach($p as $key=> $value)
+		    			@if($row->id==$value->pivot->service_id) {{"selected"}} @endif @endforeach>{{$row->name}}
 		    		</option>
 	    		@endforeach
 			</select>

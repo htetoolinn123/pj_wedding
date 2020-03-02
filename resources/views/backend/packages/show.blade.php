@@ -1,18 +1,31 @@
 @extends('backendtemplate')
 
 @section('content')
-	<div class= container>
+	<div class= "container" >
 		<h2 class="text-center">Package Details</h2>
-		<div class="card text-center mt-5">
+		<div class="card text-center mt-5 w-100">
 		  <div class="card-header">
 		    <h3>"{{$package->name}}"</h3>
 		  </div>
 		  <div class="card-body">
-		    <h5 class="card-title">Special title treatment</h5>
-		    <p class="card-text">{{$package->services}}</p>
+		  
+		    
+		    @php 
+		    $services=$package->services;
+		   
+		    @endphp
+		    <ul>
+		    @foreach($services as $key => $value)
+		  
+		     <li><p style="text-align: left;">{{$value->name}}</p></li>
+			
+		    @endforeach
+			</ul>
+		    
+		    
 		  </div>
 		  <div class="card-footer text-muted">
-		    <a href="#" class="btn btn-primary">Go Back</a>
+		    <a href="{{route('packages.index')}}" class="btn btn-primary">Go Back</a>
 		  </div>
 		</div>
 	</dev>

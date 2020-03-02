@@ -29,7 +29,9 @@ Route::get('/', function () {
 
   Route::get('/blog','FrontendController@blog')->name('blog');
 
-  
+  Route::get('/package','FrontendController@package')->name('package');
+
+  Route::get('/detailpackage/{id}','FrontendController@detailpackage')->name('detailpackage');
 
 
   Route::resource('/items','ItemController');
@@ -37,6 +39,9 @@ Route::get('/', function () {
   Route::resource('/services','ServiceController');
 
   Route::resource('/packages','PackageController');
+
+  Route::get('/getitem/{id}','AjaxController@getitem')->name('getitem');
+
 
   
 
