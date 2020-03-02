@@ -27,9 +27,15 @@ Route::get('/', function () {
 
   Route::get('/','FrontendController@main')->name('main');
 
-  Route::get('/about','FrontendController@about')->name('about');
 
+  Route::get('/about','FrontendController@about')->name('about');
+  Route::get('/blog','FrontendController@blog')->name('blog');
+
+  
    Route::get('/partner','FrontendController@partner')->name('partner');
+
+    Route::get('/contact','FrontendController@contact')->name('contact');
+   
    
    
   Route::resource('/items','ItemController');

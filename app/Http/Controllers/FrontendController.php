@@ -12,6 +12,7 @@ class FrontendController extends Controller
     }
 
 
+
      public function about()
     {
         return view('frontend.about');
@@ -20,5 +21,22 @@ class FrontendController extends Controller
      public function partner()
     {
         return view('frontend.partner');
+    }    
+
+     public function blog()
+    {
+        return view('frontend.blog');
+
     }
+
+
+     public function contact()
+    {
+        return view('frontend.contact');
+
+    }
+
+
+
+
 }

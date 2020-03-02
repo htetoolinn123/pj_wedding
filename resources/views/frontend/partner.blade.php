@@ -24,7 +24,7 @@
             <h4> <sup> <em>Ks</em></sup>16,000,000</h4>
                 <hr>
           </div>
-          <div style="letter-spacing: 0.1em;">
+          <div style="letter-spacing: 0.01em;">
             <ul>
                <li>မင်္ဂလာခန်းမ</li>
                <li>အခမ်းအနားမှူး</li>
@@ -55,7 +55,7 @@
             <h4> <sup> <em>Ks</em></sup>12,000,000</h4>
                 <hr>
           </div>
-          <div style="letter-spacing: 0.1em;">
+          <div style="letter-spacing: 0.01em;">
             <ul>
                <li>မင်္ဂလာခန်းမ</li>
                <li>အခမ်းအနားမှူး</li>
@@ -85,7 +85,7 @@
             <h4> <sup> <em>Ks</em></sup>9,000,000</h4>
                 <hr>
           </div>
-          <div style="letter-spacing: 0.1em;">
+          <div style="letter-spacing: 0.01em;">
             <ul>
                <li>မင်္ဂလာခန်းမ</li>
                <li>အခမ်းအနားမှူး</li>
@@ -118,7 +118,7 @@
             <h4> <sup> <em>Ks</em></sup>7,000,000</h4>
                 <hr>
           </div>
-          <div style="letter-spacing: 0.1em;">
+          <div style="letter-spacing: 0.01em;">
             <ul>
                <li>မင်္ဂလာခန်းမ</li>
                <li>အခမ်းအနားမှူး</li>
