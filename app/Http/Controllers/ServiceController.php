@@ -73,11 +73,8 @@ class ServiceController extends Controller
      */
     public function edit($id)
     {
-       
-
-         $service=Service:: find($id);
-     return view('backend.services.edit',compact('service'));
-   
+        $service=Service:: find($id);
+        return view('backend.services.edit',compact('service'));
     }
 
     /**
@@ -119,6 +116,6 @@ class ServiceController extends Controller
         $service=Service::find($id);
         $service->delete();
 
-         return redirect()->route('services.index');
+        return redirect()->route('services.index');
     }
 }
