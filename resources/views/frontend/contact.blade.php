@@ -5,7 +5,7 @@
 
 <style>
 	
-	#banner1{background: linear-gradient(to bottom,rgba(218,165,146,.4)0, rgba(218,165,146,.6)100%),url({{asset('storage/partner/lolo.svg')}});
+	#banner1{background: linear-gradient(to bottom,rgba(218,165,146,.4)0, rgba(218,165,146,.6)100%),url({{asset('sb-user/images/partner/lolo.svg')}});
 width: 100%;
 height: 100%; /*  viev full screen*/
 background-repeat: no-repeat;
@@ -21,7 +21,7 @@ background-size: cover;
 
 
   #counter{
-    	     background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url({{asset('storage/partner/lolo.svg')}});
+    	     background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url({{asset('sb-user/images/partner/lolo.svg')}});
               background-size: cover;
                width: 100%;
       	     height: 100%;
@@ -118,7 +118,7 @@ background-size: cover;
     <div class="col-lg-4 col-md-6 col-sm-12 my-3">
       <div class="con">
              <div class="a img-fluid display-none">
-               <img src="{{asset('storage/partner/m0.jpg')}}" style="border-radius: 100%; width: 60%; padding-top: 10px" />
+               <img src="{{asset('sb-user/images/partner/m0.jpg')}}" style="border-radius: 100%; width: 60%; padding-top: 10px" />
                </div>
             
 
@@ -135,7 +135,7 @@ background-size: cover;
     <div class="col-lg-4 col-md-6 col-sm-12 my-3">
       <div class="con">
              <div class="a img-fluid display-none">
-               <img src="{{asset('storage/partner/m1.jpg')}}" style="border-radius: 100%; width: 60%; padding-top: 10px" />
+               <img src="{{asset('sb-user/images/partner/m1.jpg')}}" style="border-radius: 100%; width: 60%; padding-top: 10px" />
                </div>
             
 
@@ -153,7 +153,7 @@ background-size: cover;
     <div class="col-lg-4 col-md-6 col-sm-12 my-3">
       <div class="con">
              <div class="a img-fluid display-none">
-               <img src="{{asset('storage/partner/m2.jpg')}}" style="border-radius: 100%; width: 60%; padding-top: 10px" />
+               <img src="{{asset('sb-user/images/partner/m2.jpg')}}" style="border-radius: 100%; width: 60%; padding-top: 10px" />
                </div>
             
 

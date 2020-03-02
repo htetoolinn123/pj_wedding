@@ -152,7 +152,7 @@
      <div class="col-lg-3 col-md-4 col-sm-12 my-3" style="text-align: center;">
        <div class="card">
          <div class="a img-fluid display-none">
-           <img src="{{asset('storage/partner/partner1.jpg')}}" style="width: 100%;" />  
+           <img src="{{asset('sb-user/images/partner/partner1.jpg')}}" style="width: 100%;" />  
          </div>
        </div>
      </div>
@@ -161,7 +161,7 @@
      <div class="col-lg-3 col-md-4 col-sm-12 my-3" style="text-align: center;">
        <div class="card">
          <div class="a img-fluid display-none">
-           <img src="{{asset('storage/partner/partner2.jpg')}}" style="width: 100%;" />  
+           <img src="{{asset('sb-user/images/partner/partner2.jpg')}}" style="width: 100%;" />  
          </div>
        </div>
      </div>
@@ -170,7 +170,7 @@
      <div class="col-lg-3 col-md-4 col-sm-12 my-3" style="text-align: center;">
        <div class="card">
          <div class="a img-fluid display-none">
-           <img src="{{asset('storage/partner/partner3.jpg')}}" style="width: 100%;" />  
+           <img src="{{asset('sb-user/images/partner/partner3.jpg')}}" style="width: 100%;" />  
          </div>
        </div>
      </div>  
@@ -178,7 +178,7 @@
      <div class="col-lg-3 col-md-4 col-sm-12 my-3" style="text-align: center;">
        <div class="card">
          <div class="a img-fluid display-none">
-           <img src="{{asset('storage/partner/partner4.jpg')}}" style="width: 100%;" />  
+           <img src="{{asset('sb-user/images/partner/partner4.jpg')}}" style="width: 100%;" />  
          </div>
        </div>
      </div> 
@@ -186,7 +186,7 @@
      <div class="col-lg-3 col-md-4 col-sm-12 my-3" style="text-align: center;">
        <div class="card">
          <div class="a img-fluid display-none">
-           <img src="{{asset('storage/partner/partner5.jpg')}}" style="width: 100%;" />  
+           <img src="{{asset('sb-user/images/partner/partner5.jpg')}}" style="width: 100%;" />  
          </div>
        </div>
      </div>
@@ -195,7 +195,7 @@
      <div class="col-lg-3 col-md-4 col-sm-12 my-3" style="text-align: center;">
        <div class="card">
          <div class="a img-fluid display-none">
-           <img src="{{asset('storage/partner/partner6.jpg')}}" style="width: 100%;" />  
+           <img src="{{asset('sb-user/images/partner/partner6.jpg')}}" style="width: 100%;" />  
          </div>
        </div>
      </div>
@@ -203,7 +203,7 @@
      <div class="col-lg-3 col-md-4 col-sm-12 my-3" style="text-align: center;">
        <div class="card">
          <div class="a img-fluid display-none">
-           <img src="{{asset('storage/partner/partner7.jpg')}}" style="width: 100%;" />  
+           <img src="{{asset('sb-user/images/partner/partner7.jpg')}}" style="width: 100%;" />  
          </div>
        </div>
      </div>
@@ -211,7 +211,7 @@
      <div class="col-lg-3 col-md-4 col-sm-12 my-3" style="text-align: center;">
        <div class="card">
          <div class="a img-fluid display-none">
-           <img src="{{asset('storage/partner/partner8.jpg')}}" style="width: 100%;" />  
+           <img src="{{asset('sb-user/images/partner/partner8.jpg')}}" style="width: 100%;" />  
          </div>
        </div>
      </div>
@@ -219,16 +219,7 @@
      <div class="col-lg-3 col-md-4 col-sm-12 my-3" style="text-align: center;">
        <div class="card">
          <div class="a img-fluid display-none">
-           <img src="{{asset('storage/partner/partner9.jpg')}}" style="width: 100%;" />  
-         </div>
-       </div>
-     </div>
-
-
-     <div class="col-lg-3 col-md-4 col-sm-12 my-3" style="text-align: center;">
-       <div class="card">
-         <div class="a img-fluid display-none">
-           <img src="{{asset('storage/partner/partner10.jpg')}}" style="width: 100%;" />  
+           <img src="{{asset('sb-user/images/partner/partner9.jpg')}}" style="width: 100%;" />  
          </div>
        </div>
      </div>
@@ -237,7 +228,7 @@
      <div class="col-lg-3 col-md-4 col-sm-12 my-3" style="text-align: center;">
        <div class="card">
          <div class="a img-fluid display-none">
-           <img src="{{asset('storage/partner/partner11.jpg')}}" style="width: 100%;" />  
+           <img src="{{asset('sb-user/images/partner/partner10.jpg')}}" style="width: 100%;" />  
          </div>
        </div>
      </div>
@@ -246,7 +237,7 @@
      <div class="col-lg-3 col-md-4 col-sm-12 my-3" style="text-align: center;">
        <div class="card">
          <div class="a img-fluid display-none">
-           <img src="{{asset('storage/partner/partner12.jpg')}}" style="width: 100%;" />  
+           <img src="{{asset('sb-user/images/partner/partner11.jpg')}}" style="width: 100%;" />  
          </div>
        </div>
      </div>
@@ -255,7 +246,7 @@
      <div class="col-lg-3 col-md-4 col-sm-12 my-3" style="text-align: center;">
        <div class="card">
          <div class="a img-fluid display-none">
-           <img src="{{asset('storage/partner/partner13.jpg')}}" style="width: 100%;" />  
+           <img src="{{asset('sb-user/images/partner/partner12.jpg')}}" style="width: 100%;" />  
          </div>
        </div>
      </div>
@@ -264,7 +255,7 @@
      <div class="col-lg-3 col-md-4 col-sm-12 my-3" style="text-align: center;">
        <div class="card">
          <div class="a img-fluid display-none">
-           <img src="{{asset('storage/partner/partner14.jpg')}}" style="width: 100%;" />  
+           <img src="{{asset('sb-user/images/partner/partner13.jpg')}}" style="width: 100%;" />  
          </div>
        </div>
      </div>
@@ -273,7 +264,7 @@
      <div class="col-lg-3 col-md-4 col-sm-12 my-3" style="text-align: center;">
        <div class="card">
          <div class="a img-fluid display-none">
-           <img src="{{asset('storage/partner/partner15.jpg')}}" style="width: 100%;" />  
+           <img src="{{asset('sb-user/images/partner/partner14.jpg')}}" style="width: 100%;" />  
          </div>
        </div>
      </div>
@@ -282,7 +273,16 @@
      <div class="col-lg-3 col-md-4 col-sm-12 my-3" style="text-align: center;">
        <div class="card">
          <div class="a img-fluid display-none">
-           <img src="{{asset('storage/partner/partner16.jpg')}}" style="width: 100%;" />  
+           <img src="{{asset('sb-user/images/partner/partner15.jpg')}}" style="width: 100%;" />  
+         </div>
+       </div>
+     </div>
+
+
+     <div class="col-lg-3 col-md-4 col-sm-12 my-3" style="text-align: center;">
+       <div class="card">
+         <div class="a img-fluid display-none">
+           <img src="{{asset('sb-user/images/partner/partner16.jpg')}}" style="width: 100%;" />  
          </div>
        </div>
      </div>
