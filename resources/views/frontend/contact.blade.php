@@ -80,7 +80,8 @@ background-size: cover;
 
 
 
-							<div class="col-lg-6 col-md-6 col-sm-12 my-4"  >
+							<div class="col-lg-6 col-md-6 col-sm-12 my-4
+							     form-group"  >
 
 								<textarea class="form-control @error('message') is-invalid @enderror" name="message" placeholder="Message" style="height:220px;"></textarea>
 
@@ -88,17 +89,16 @@ background-size: cover;
 								<div class="alert alert-danger">{{ $message }}</div>
 								@enderror
 							</div>
-						</div>   <!--  this is row close -->
+						 <!--  this is row close -->
+                        </div>  
 
-
-						<div class="form-group row" style="text-align: center;">
-							<div class="col-sm-3 col-lg-2 col-md2">
-								<button type="submit" class="btn btn-primary btn-block">
-									<i class="fa fa-save"></i> Save
+						
+							<div class="col-sm-4 col-lg-4 col-md-4 col-xs-4 form-group">
+								<button type="submit" class="btn btn-primary ">
+									 Send
 								</button>
-							</div>
-						</div>
-
+	                    	</div>
+					  
 					</form>
 
 
