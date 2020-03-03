@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="{{asset('sb-user/css/owl.theme.default.min.css')}}">
     <link rel="stylesheet" href="{{asset('sb-user/fonts/flaticon/font/flaticon.css')}}">
     <link rel="stylesheet" href="{{asset('sb-user/css/aos.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('sb-user/fontawesome-free/css/all.min.css')}}">
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="{{asset('sb-user/css/style.css')}}">

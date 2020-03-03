@@ -10,7 +10,7 @@
             <p>Welcome</p>
             <h1 class="mb-3 text-primary">Perfect Wedding Service</h1>
             <p style="font-weight: bold;">Wedding တစ်ပွဲလုပ်တော့မယ်ဆို ဘာပဲလိုလို ကျွန်တော်တို့ Perfect Wedding Service ကို ဆက်သွယ် မေးမြန်းနိုင်ပါတယ် ခင်ဗျ။</p>
-            <p><a href="#" class="btn btn-primary">Contact Me</a></p>
+            <p><a href="{{route('contact')}}" class="btn btn-primary">Contact Me</a></p>
           </div>
         </div>
       </div>
@@ -66,7 +66,8 @@
           </div>
 
           <div style="text-align: center; padding: 20px 0px 20px 0px;">
-            <a href="{{route('package')}}" class="btn btn-warning ">Package</a>
+            <a href="{{route('package')}}" class="btn btn-warning ">
+              Package<i class="fas fa-arrow-circle-right pl-2"></i></a>
            </div>
       </div>
     </div>
@@ -94,7 +95,7 @@
           </div>
 
           <div style="text-align: center; padding: 20px 0px 20px 0px;">
-            <a href="{{route('package')}}" class="btn btn-warning ">Package</a>
+            <a href="{{route('package')}}" class="btn btn-warning ">Package<i class="fas fa-arrow-circle-right pl-2"></i></a>
            </div>
       </div>
     </div>
@@ -119,7 +120,7 @@
           </div>
 
           <div style="text-align: center; padding: 20px 0px 20px 0px;">
-            <a href="{{route('package')}}" class="btn btn-warning "> Package</a>
+            <a href="{{route('package')}}" class="btn btn-warning "> Package<i class="fas fa-arrow-circle-right pl-2"></i></a>
            </div>
       </div>
     </div>
@@ -143,7 +144,7 @@
           </div>
 
           <div style="text-align: center; padding: 20px 0px 20px 0px;">
-            <a href="{{route('package')}}" class="btn btn-warning "> Package</a>
+            <a href="{{route('package')}}" class="btn btn-warning "> Package<i class="fas fa-arrow-circle-right pl-2"></i></a>
            </div>
       </div>
     </div>

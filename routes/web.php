@@ -15,12 +15,23 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::group([
+  'prefix' => 'backend',
+],function(){
 
   Route::get('/dashboard','BackendController@dashboard');
 
+  Route::resource('/items','ItemController');
+
+  Route::resource('/services','ServiceController');
+
+  Route::resource('/packages','PackageController');
+});
+
+
+
+
   Route::get('/','FrontendController@main')->name('main');
-
-
 
   Route::get('/about','FrontendController@about')->name('about');
   Route::get('/blog','FrontendController@blog')->name('blog');
@@ -35,9 +46,7 @@ Route::get('/', function () {
   Route::get('/detailpackage/{id}','FrontendController@detailpackage')->name('detailpackage');
   
     
-  Route::resource('/items','ItemController');
-  Route::resource('/services','ServiceController');
-  Route::resource('/packages','PackageController');
+  
 
   Route::post('/itembyservice','AjaxController@getitem')->name('getitem');
 

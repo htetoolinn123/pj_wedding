@@ -94,6 +94,7 @@ background-attachment: fixed;
 						
 							<div class="col-sm-4 col-lg-4 col-md-4 col-xs-4 form-group">
 								<button type="submit" class="btn btn-primary ">
+								<i class="fas fa-paper-plane pr-3"></i>
 									 Send
 								</button>
 	                    	</div>
