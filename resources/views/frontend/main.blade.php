@@ -34,8 +34,124 @@
     </div>
   </div>
 
+
   <hr class="hr">
 
+
+      <div class="col-md-7 text-center mx-auto mt-5 pt-4">
+        <h2 class="serif">Our Packages</h2>
+      </div>
+
+
+  <div class="container pt-5">
+    <div class="row">
+      
+  <div class="col-lg-3 col-md-6 col-sm-12 my-3"  >
+      <div class="card" style="border-radius: 10px; ">
+           <div class="a img-fluid display-none">
+             <div style="background-color:#F9A405; height: 60px; padding-top: 10px;text-align: center;border-radius: 10px 10px 0px 0px;" ><h2>Diamond</h2>
+             </div>
+           </div> 
+
+          <div style="letter-spacing: 0.01em; ">
+            <ul>
+                <li>Food&Drink</li>
+               <li>မင်္ဂလာခန်းမ</li>
+               <li>ပန်းနှင့် မီးအလှဆင်</li>
+               <li>Photography</li>
+               <li>Music Band</li>
+               <li>မိတ်ကပ်</li>
+               <li>အခမ်းအနားမှူး</li>
+            </ul>            
+          </div>
+
+          <div style="text-align: center; padding: 20px 0px 20px 0px;">
+            <a href="{{route('package')}}" class="btn btn-warning ">Go To</a>
+           </div>
+      </div>
+    </div>
+
+
+<!------------------Platinum--------------------- -->
+
+    <div class="col-lg-3 col-md-6 col-sm-12 my-3"  >
+      <div class="card" style="border-radius: 10px;">
+           <div class="a img-fluid display-none">
+             <div style="background-color:#F9A405; height: 60px; padding-top: 10px;text-align: center;border-radius: 10px 10px 0px 0px;" ><h2>Platinum</h2></div>
+           </div> 
+
+
+          <div style="letter-spacing: 0.01em;">
+            <ul>
+               <li>Food&Drink</li>
+               <li>မင်္ဂလာခန်းမ</li>
+               <li>ပန်းနှင့် မီးအလှဆင်</li>
+               <li>Photography</li>
+               <li>မိတ်ကပ်</li>
+               <li>အခမ်းအနားမှူး</li>
+    
+            </ul>            
+          </div>
+
+          <div style="text-align: center; padding: 20px 0px 20px 0px;">
+            <a href="{{route('package')}}" class="btn btn-warning ">Go To</a>
+           </div>
+      </div>
+    </div>
+
+ <!---------------------Gold-------------------------->
+
+  <div class="col-lg-3 col-md-6 col-sm-12 my-3"  >
+      <div class="card" style="border-radius: 10px;">
+           <div class="a img-fluid display-none">
+             <div style="background-color:#F9A405; height: 60px; padding-top: 10px;text-align: center;border-radius: 10px 10px 0px 0px;" ><h2>Gold</h2></div>
+           </div> 
+
+  
+          <div style="letter-spacing: 0.01em;">
+            <ul>
+                <li>Food&Drink</li>
+               <li>မင်္ဂလာခန်းမ</li>
+               <li>ပန်းနှင့် မီးအလှဆင်</li>
+               <li>Photography</li>
+               <li>အခမ်းအနားမှူး</li>
+            </ul>            
+          </div>
+
+          <div style="text-align: center; padding: 20px 0px 20px 0px;">
+            <a href="{{route('package')}}" class="btn btn-warning ">Go To</a>
+           </div>
+      </div>
+    </div>
+  
+
+  <!------------------Silver------------------------>
+
+  <div class="col-lg-3 col-md-6 col-sm-12 my-3" >
+      <div class="card" style="border-radius: 10px;">
+           <div class="a img-fluid display-none">
+             <div style="background-color:#F9A405; height: 60px; padding-top: 10px;text-align: center;border-radius: 10px 10px 0px 0px;" ><h2>Silver</h2></div>
+           </div> 
+
+          <div style="letter-spacing: 0.01em;">
+            <ul>
+               <li>Food&Drink</li>
+               <li>မင်္ဂလာခန်းမ</li>
+               <li>ပန်းနှင့် မီးအလှဆင်</li>
+               <li>အခမ်းအနားမှူး</li>
+            </ul>            
+          </div>
+
+          <div style="text-align: center; padding: 20px 0px 20px 0px;">
+            <a href="{{route('package')}}" class="btn btn-warning ">Go To</a>
+           </div>
+      </div>
+    </div>
+
+    </div>
+    
+  </div>
+  <hr class="hr">
   <div class="container-fluid" align="center">
     <div class="col-md-7 text-center mx-auto mt-5 pt-4">
       <h2 class="serif">Our Blogs</h2>

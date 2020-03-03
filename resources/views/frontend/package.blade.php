@@ -9,6 +9,7 @@
     </div>
 	</div>
 	<div class="row text-center  pt-3 mx-4">
+		
 	@foreach($packages as $row)
 		<div class="col-lg-3 col-md-6 col-sm-12">
 		<h2 style="color: #B3AFAA;" class="text-center mt-4">{{$row->name}}</h2>
@@ -16,8 +17,8 @@
             width="250px">
         <p><a href="{{route('detailpackage',$row->id)}}"  class="btn btn-primary mt-3 ">Click Me</a></p>
 		</div>
-
 	@endforeach
+
 	</div>
 </div>
 
