@@ -27,6 +27,11 @@
       
     </div>
      @endforeach
+    <div  class="mt-5 pt-5" >
+    	<a class="btn btn-primary" href="{{route('package')}}">
+    		<i style="font-size: 20px; font" class="fas fa-arrow-alt-circle-left text-dark"><span style="font-weight: bold;">&nbsp;Back</span></i>
+    	</a>
+    </div>
   </div>
  
   <div class="col-lg-9 col-md-9 col-sm-12" style="background-color: #FAF7F1; height: auto; border-radius: 20px;">
