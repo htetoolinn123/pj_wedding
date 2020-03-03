@@ -46,7 +46,7 @@ Route::get('/', function () {
 
   Route::resource('/packages','PackageController');
 
-  Route::get('/getitem/{id}','AjaxController@getitem')->name('getitem');
+  Route::post('/itembyservice','AjaxController@getitem')->name('getitem');
 
 
   

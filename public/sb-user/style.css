@@ -14,3 +14,14 @@
 	text-align: justify;
 	font-size: 20px;
 }
+.card1{
+	float: left;
+	height: 300px;
+}
+.dd{
+	border: none;
+	margin-top: 8px;
+}
+#box{
+	box-shadow:  3px 3px 3px 3px #EDEDEA;
+}
