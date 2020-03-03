@@ -5,6 +5,7 @@
     <title>Capture &mdash; Website Template by Colorlib</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta  name="csrf-token" content="{{csrf_token() }}">
 
     <link href="https://fonts.googleapis.com/css?family=Muli:400,700|Hepta+Slab:400,700&display=swap" rel="stylesheet">
 
@@ -61,17 +62,19 @@
 
               <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav ml-auto ">
-                  <li class="active"><a href="{{route('main')}}" class="nav-link">Home</a></li>
-                   <li><a href="{{route('photography')}}" class="nav-link">Photography</a></li>
-                     
-                 
-                  <li><a href="{{route('partner')}}" class="nav-link">Packages</a></li>
-
-                  <li><a href="{{route('about')}}" class="nav-link">About</a></li>
-                  <li><a href="{{route('blog')}}" class="nav-link">Blog</a></li>
-                   <li><a href="{{route('faq')}}" class="nav-link">Faqs</a></li>
-
+                  <li><a href="{{route('main')}}" class="nav-link">Home</a></li>
+                  <li><a href="{{route('package')}}" class="nav-link">Packages</a></li>
+                  <li><a href="{{route('photography')}}" class="nav-link">Photography</a></li>
                   <li><a href="{{route('contact')}}" class="nav-link">Contact</a></li>
+                
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">More</a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="{{route('blog')}}">Blog</a>
+                        <a class="dropdown-item" href="{{route('about')}}">About</a>
+                        <a class="dropdown-item" href="{{route('faq')}}">Faqs</a>
+                        <a class="dropdown-item" href="{{route('partner')}}">Partner</a>
+                    </li>
 
                 </ul>
               </nav>
@@ -90,13 +93,13 @@
         
         <div class="row text-center">
           <div class="col-md-12">
-            <div class="border-top pt-5">
+           
               <p>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="http://kowaiyantun.me/" target="_blank" >Perfect</a>
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> create  <i class="icon-heart text-danger" aria-hidden="true"></i> by Perfect (Myanmar IT Students)
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
-            </div>
+            
           </div>
 
         </div>
@@ -121,6 +124,7 @@
     <script src="{{asset('sb-user/js/aos.js')}}"></script>
 
     <script src="{{asset('sb-user/js/main.js')}}"></script>
+    @yield('script')
 
   </body>
 

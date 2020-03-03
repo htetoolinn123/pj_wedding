@@ -95,7 +95,7 @@ class PackageController extends Controller
         $package->name = request('name');
         $package->save();
 
-        $package->services()->detach(request('service'));
+        $package->services()->attach(request('service'));
 
         return redirect()->route('packages.index');
     }

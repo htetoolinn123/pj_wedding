@@ -16,13 +16,6 @@ Route::get('/', function () {
 });
 
 
-  /*Route::group([
-
-  	    'middleware' => 'auth',
-
-                'prefix'=>'backend',],
-                function(){*/
-
   Route::get('/dashboard','BackendController@dashboard');
 
   Route::get('/','FrontendController@main')->name('main');
@@ -30,20 +23,23 @@ Route::get('/', function () {
 
   Route::get('/about','FrontendController@about')->name('about');
   Route::get('/blog','FrontendController@blog')->name('blog');
+
   Route::get('/faq','FrontendController@faq')->name('faq');
-  Route::get('/about','FrontendController@about')->name('about');
   Route::get('/photography','FrontendController@photography')->name('photography');
+
   Route::get('/partner','FrontendController@partner')->name('partner');
   Route::get('/contact','FrontendController@contact')->name('contact');
     
-   
+  Route::get('/contact','FrontendController@contact')->name('contact');
+  Route::get('/package','FrontendController@package')->name('package');
+
+  Route::get('/detailpackage/{id}','FrontendController@detailpackage')->name('detailpackage');
+  
+    
   Route::resource('/items','ItemController');
-
-
   Route::resource('/services','ServiceController');
-
-
   Route::resource('/packages','PackageController');
+  Route::get('/getitem/{id}','AjaxController@getitem')->name('getitem');
 
 
   
