@@ -11,11 +11,7 @@ class FrontendController extends Controller
     {
         return view('frontend.main');
     }
-   
-     public function partner()
-    {
-        return view('frontend.partner');
-    }    
+     
 
      public function blog()
     {

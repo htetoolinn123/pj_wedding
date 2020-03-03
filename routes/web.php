@@ -22,6 +22,27 @@ Route::get('/', function () {
 
 
 
+  Route::get('/about','FrontendController@about')->name('about');
+  Route::get('/blog','FrontendController@blog')->name('blog');
+
+  Route::get('/faq','FrontendController@faq')->name('faq');
+  Route::get('/photography','FrontendController@photography')->name('photography');
+
+  Route::get('/contact','FrontendController@contact')->name('contact');
+    
+  Route::get('/package','FrontendController@package')->name('package');
+
+  Route::get('/detailpackage/{id}','FrontendController@detailpackage')->name('detailpackage');
+  
+    
+  Route::resource('/items','ItemController');
+  Route::resource('/services','ServiceController');
+  Route::resource('/packages','PackageController');
+
+  Route::post('/itembyservice','AjaxController@getitem')->name('getitem');
+
+
+
 
   
 
