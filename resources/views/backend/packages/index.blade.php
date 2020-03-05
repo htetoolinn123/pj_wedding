@@ -13,19 +13,21 @@
 	            <div class="row">
 					<div class="col-10">
 						<h4 class="m-0 font-weight-bold text-primary"> 
-			            	List 
+			            
 			            </h4>
 					</div>
 
 					<div class="col-2">
-						<a href="{{route('packages.create')}}" class="btn btn-primary btn-block float-right"> 
+						<a href="{{route('packages.create')}}" class="btn btn-info btn-block float-right"> 
 		            		<i class="fa fa-plus pr-2"></i>	Add New 
 		            	</a>
 					</div>
 				</div>
 	        </div>
 
-	<table class="table text-left table-hover table-inverse text-center table-bordered mt-3">
+	<div class="card-body">
+              <div class="table-responsive">
+                <table class=" text-center table table-bordered" id="dataTable" width="100%" cellspacing="0">
 		<thead>
 			<tr>
 				<th width="200px">No</th>
@@ -61,6 +63,8 @@
 		</tbody>
 		
 	</table>
+</div>
+</div>
 </div>
 </div>
 @endsection

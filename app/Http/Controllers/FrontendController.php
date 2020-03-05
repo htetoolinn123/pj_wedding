@@ -53,4 +53,9 @@ class FrontendController extends Controller
 
     }
 
+    public function book($value='')
+    {
+        return view('frontend.book');
+    }
+
 }

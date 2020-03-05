@@ -43,18 +43,18 @@
       </div>
 
 
-  <div class="container pt-5">
+  <div class="container pt-4">
     <div class="row">
       
   <div class="col-lg-3 col-md-6 col-sm-12 my-3"  >
-      <div class="card" style="border-radius: 10px; ">
+      <div class="card" style="border-radius: 10px; " id="box">
            <div class="a img-fluid display-none">
              <div style="background-color:#F9A405; height: 60px; padding-top: 10px;text-align: center;border-radius: 10px 10px 0px 0px;" ><h2>Diamond</h2>
              </div>
            </div> 
 
           <div style="letter-spacing: 0.01em; ">
-            <ul>
+            <ul class="mt-3">
                 <li>Food&Drink</li>
                <li>မင်္ဂလာခန်းမ</li>
                <li>ပန်းနှင့် မီးအလှဆင်</li>
@@ -76,14 +76,14 @@
 <!------------------Platinum--------------------- -->
 
     <div class="col-lg-3 col-md-6 col-sm-12 my-3"  >
-      <div class="card" style="border-radius: 10px;">
+      <div class="card" style="border-radius: 10px;" id="box">
            <div class="a img-fluid display-none">
              <div style="background-color:#F9A405; height: 60px; padding-top: 10px;text-align: center;border-radius: 10px 10px 0px 0px;" ><h2>Platinum</h2></div>
            </div> 
 
 
           <div style="letter-spacing: 0.01em;">
-            <ul>
+            <ul class="mt-3">
                <li>Food&Drink</li>
                <li>မင်္ဂလာခန်းမ</li>
                <li>ပန်းနှင့် မီးအလှဆင်</li>
@@ -103,14 +103,14 @@
  <!---------------------Gold-------------------------->
 
   <div class="col-lg-3 col-md-6 col-sm-12 my-3"  >
-      <div class="card" style="border-radius: 10px;">
+      <div class="card" style="border-radius: 10px;" id="box">
            <div class="a img-fluid display-none">
              <div style="background-color:#F9A405; height: 60px; padding-top: 10px;text-align: center;border-radius: 10px 10px 0px 0px;" ><h2>Gold</h2></div>
            </div> 
 
   
           <div style="letter-spacing: 0.01em;">
-            <ul>
+            <ul class="mt-3">
                 <li>Food&Drink</li>
                <li>မင်္ဂလာခန်းမ</li>
                <li>ပန်းနှင့် မီးအလှဆင်</li>
@@ -129,13 +129,13 @@
   <!------------------Silver------------------------>
 
   <div class="col-lg-3 col-md-6 col-sm-12 my-3" >
-      <div class="card" style="border-radius: 10px;">
+      <div class="card" style="border-radius: 10px; " id="box">
            <div class="a img-fluid display-none">
              <div style="background-color:#F9A405; height: 60px; padding-top: 10px;text-align: center;border-radius: 10px 10px 0px 0px;" ><h2>Silver</h2></div>
            </div> 
 
           <div style="letter-spacing: 0.01em;">
-            <ul>
+            <ul class="mt-3">
                <li>Food&Drink</li>
                <li>မင်္ဂလာခန်းမ</li>
                <li>ပန်းနှင့် မီးအလှဆင်</li>
@@ -157,9 +157,9 @@
     <div class="col-md-7 text-center mx-auto mt-5 pt-4">
       <h2 class="serif">Our Blogs</h2>
     </div>
-    <div class="row mt-1">
+    <div class="row mt-4">
       <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
-        <div class="card" style="width: 18rem; height: 450px;">
+        <div class="card" style="width: 18rem; height: 450px;" id="box">
           <img src="{{asset('sb-user/images/ring.jpg')}}" class="card-img-top" alt="...">
           <div class="card-body">
             <p class=" p card-title">သမိုင်းကြောင်းနက်နဲခဲ့တဲ့ လက်ထပ်လက်စွပ်များ</p>
@@ -171,7 +171,7 @@
       </div>
 
       <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
-        <div class="card" style="width: 18rem; height: 450px;">
+        <div class="card" style="width: 18rem; height: 450px;" id="box">
           <img src="{{asset('sb-user/images/couple.jpg')}}" class="card-img-top" alt="...">
           <div class="card-body">
             <p class=" p card-title">မိမိ crush နေသောကောင်မလေးဆီမှ အမှတ်ယူနည်း သုံးနည်း</p>
@@ -182,7 +182,7 @@
       </div>
 
       <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
-        <div class="card" style="width: 18rem; height: 450px;">
+        <div class="card" style="width: 18rem; height: 450px;" id="box">
           <img src="{{asset('sb-user/images/marry.jpg')}}" class="card-img-top" alt="...">
           <div class="card-body">
             <p class=" p card-title">လက်ထပ်ဖို့ အကောင်းဆုံး အရွယ်</p>
@@ -193,7 +193,7 @@
       </div>
 
       <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
-        <div class="card" style="width: 18rem; height: 450px;">
+        <div class="card" style="width: 18rem; height: 450px;" id="box">
           <img src="{{asset('sb-user/images/hand.jpg')}}" class="card-img-top" alt="...">
           <div class="card-body">
             <p class=" p card-title">မိန်းကလေးများအတွက် စေ့စပ်အပြီး Relationship ထိန်းသိမ်းနည်းများ</p>
@@ -211,7 +211,7 @@
     <div class="col-md-7 text-center mx-auto mt-5 pt-4">
       <h2 class="serif">Our Photo Studio</h2>
     </div>
-    <div class="row mt-2  mx-4">
+    <div class="row mt-2  mx-4 pt-4">
       <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
         <img src="{{asset('sb-user/images/p1.jpg')}}" class="img-fluid img" width="400px">
       </div>

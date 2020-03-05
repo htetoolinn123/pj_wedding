@@ -2,7 +2,7 @@
 <html lang="en">
 
   <head>
-    <title>Capture &mdash; Website Template by Colorlib</title>
+    <title>Wedding Service</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta  name="csrf-token" content="{{csrf_token() }}">
@@ -43,7 +43,7 @@
 
       <header class="site-navbar site-navbar-target" role="banner">
 
-        <div class="container">
+        <div class="container-fluid">
           <div class="row align-items-center position-relative">
 
             <div class="col-3 ">
@@ -63,11 +63,11 @@
 
               <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav ml-auto ">
-                  <li><a href="{{route('main')}}" class="nav-link">Home</a></li>
+                  <li><a href="{{route('main')}}" class="nav-link ">Home</a></li>
                   <li><a href="{{route('package')}}" class="nav-link">Packages</a></li>
                   <li><a href="{{route('photography')}}" class="nav-link">Photography</a></li>
                   <li><a href="{{route('contact')}}" class="nav-link">Contact</a></li>
-                
+                  <li><a href="{{route('book')}}" class="nav-link">Booking</a></li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">More</a>
                       <div class="dropdown-menu">
@@ -90,21 +90,73 @@
 
     @yield('content')
 
-    <footer class="modal-footer mt-5">
+    <footer class="modal-footer mt-5 pt-4" style="background-color: gray;">
       <div class="container">
-        
-        <div class="row text-center">
-          <div class="col-md-12">
-           
-              <p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> create  <i class="icon-heart text-danger" aria-hidden="true"></i> by Perfect (Myanmar IT Students)
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
-            
-          </div>
 
+
+
+        <div class="container">
+          <div class="row mt-3">
+            <div class="col-md-4 col-sm-12">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.68694262748!2d96.1720107141201!3d16.84187968840766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c19316863d2c15%3A0x2b17a1a8536c1ebe!2sAroma%20Zulu%20Wedding%20One%20Stop%20Service%20Center!5e0!3m2!1sen!2smm!4v1583300333908!5m2!1sen!2smm" width="300" height="125" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+
+
+            <div class="col-md-4 col-sm-12">
+              <p class="text-white" style=""><i class="fas fa-map-marker-alt pr-2" ></i> No(64),Mayangone Township, Yangon</p>
+              <p class="text-white" style=""><i class="fas fa-phone-square-alt pr-2"></i> +959 797 731 911</p>
+              <p class="text-white" style=""><i class="fas fa-envelope pr-2"></i> perfectweddingservice@gmail.com</p>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+              <ul class="nav ">
+                <li class="nav-item">
+                  <a class="nav-link active" href="{{route('main')}}">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="{{route('package')}}">Package</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="{{route('contact')}}">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="{{route('about')}}">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="{{route('photography')}}">Photography</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{route('faq')}}">Faqs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{route('blog')}}">Blog</a>
+                </li>   
+              </ul>
+
+              <div class="col-12 text-dark">
+                <a href=""><i class="fab fa-facebook-square fa-2x p-2 text-white"></i></a>
+                <a href=""><i class="fab fa-twitter-square fa-2x p-2 text-white"></i></a>
+                <a href=""><i class="fab fa-instagram fa-2x p-2 text-white"></i></a>
+                <a href=""><i class="fab fa-google-plus-square fa-2x p-2 text-white"></i></a>
+              </div>
+
+            </div>
+
+          </div>
         </div>
+        <hr>
+        <div class="row text-center pt-3">
+          <div class="col-md-12">        
+            <p class="text-dark">
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              Copyright &copy;<script>document.write(new Date().getFullYear());</script> create  <i class="icon-heart text-danger" aria-hidden="true"></i> by Perfect (Myanmar IT Students)
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>                
+          </div>
+        </div>
+
+
+
       </div>
     </footer>
 
@@ -126,6 +178,8 @@
     <script src="{{asset('sb-user/js/aos.js')}}"></script>
 
     <script src="{{asset('sb-user/js/main.js')}}"></script>
+  <script type="text/javascript" src="{{asset('js/custom.js')}}"></script>
+    
     @yield('script')
 
   </body>

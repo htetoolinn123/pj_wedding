@@ -44,8 +44,8 @@ Route::group([
   Route::get('/package','FrontendController@package')->name('package');
 
   Route::get('/detailpackage/{id}','FrontendController@detailpackage')->name('detailpackage');
-  
-    
+   
+  Route::get('/book','FrontendController@book')->name('book');
   
 
   Route::post('/itembyservice','AjaxController@getitem')->name('getitem');
@@ -57,3 +57,6 @@ Route::group([
 
 
    /* });*/
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

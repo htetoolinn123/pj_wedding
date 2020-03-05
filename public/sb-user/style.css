@@ -31,3 +31,11 @@
 	box-shadow:  3px 3px 3px 3px #EDEDEA;
 	border-radius: 20px;
 }
+nav a:hover{
+
+}
+nav a{
+	width: 80px;
+	text-align: center;
+	color: black;
+}

@@ -25,7 +25,7 @@
 		    
 		  </div>
 		  <div class="card-footer text-muted">
-		    <a href="{{route('packages.index')}}" class="btn btn-primary">Go Back</a>
+		    <a href="{{route('packages.index')}}" class="btn btn-info">Go Back</a>
 		  </div>
 		</div>
 	</dev>

@@ -94,7 +94,7 @@ background-attachment: fixed;
 						
 							<div class="col-sm-4 col-lg-4 col-md-4 col-xs-4 form-group">
 								<button type="submit" class="btn btn-primary ">
-								<i class="fas fa-paper-plane pr-3"></i>
+							<i class="fas fa-paper-plane pr-3"></i>
 									 Send
 								</button>
 	                    	</div>
@@ -108,6 +108,53 @@ background-attachment: fixed;
 		</div>
 
 	</div>
+
+
+
+
+	 <div class="container">
+
+        <div class="row pt-3" >
+           
+            
+            <div class="col-md-7 text-center mx-auto mt-3 pt-4">
+              <h2 class="serif">Now,Join us</h2>
+           </div> 
+        </div>
+
+        <div class="row contact-info pt-5">
+
+          <div class="col-lg-4 col-md-4 col-sm-12 text-center mt-3" style="letter-spacing: 0.1em;">
+            <div class="contact-address">
+              <i class="fas fa-map-marker-alt mt-3" style="font-size:40px;"></i>
+              <h3 class="pt-4">Address</h3>
+              <address><a href="https://www.google.com/maps/place/640+7th+St,+Yangon/@16.8619128,96.1091906,17z/data=!3m1!4b1!4m5!3m4!1s0x30c194fde6ea9327:0x68243b6e09d65f0e!8m2!3d16.8619077!4d96.1113847"><p class="pt-2">No(640) 7-th Street,Mayangone Township, Yangon ,Myanmar(Burmese)</p></a></address>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-4 col-sm-12 text-center mt-3" style="letter-spacing: 0.1em;">
+            <div class="contact-phone">
+              <i class="fas fa-phone-volume mt-3" style="font-size:40px;"></i>
+              <h3 class="pt-4">Phone</h3>
+              <p class="pt-3">+959 797 731 911</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-12 text-center mt-3"
+         >
+            <div class="contact-email mt-3">
+            	<i class="far fa-envelope" style="font-size:40px;"></i>
+             
+              <h3 class="pt-4">Email</h3>
+              <p class="pt-2"><a href="https://www.google.com/search?sxsrf=ALeKk036aw7wj30cqLbgyNpV7h5adB5QAA%3A1583297487297&ei=zzNfXqXhEcfez7sP0YicmAc&q=gmail&oq=gmail&gs_l=psy-ab.3..0i71l8.0.0..6326...0.2..0.0.0.......0......gws-wiz.AbDsovkdiZ4&ved=0ahUKEwjlhLfigoDoAhVH73MBHVEEB3MQ4dUDCAs&uact=5">perfectweddingwedding@gmail.com</a></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
 
 
 

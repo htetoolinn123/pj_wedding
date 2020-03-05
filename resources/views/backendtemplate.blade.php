@@ -10,13 +10,20 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin 2 - Dashboard</title>
+  <title>Wedding Service - Dashboard</title>
 
   <!-- Custom fonts for this template-->
   <link href="{{asset('sb_admin/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
+
+  <link href="{{asset('sb_admin/datatables/dataTables.bootstrap4.min.css')}}" rel="stylesheet" />
+  
+ 
+  
+
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
   <!-- Custom styles for this template-->
+
   <link href="{{asset('sb_admin/css/sb-admin-2.min.css')}}" rel="stylesheet">
   <link href="{{asset('select/css/select2.min.css')}}" rel="stylesheet" />
 
@@ -28,14 +35,15 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    <ul class="navbar-nav bg-gradient-info sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
         <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-laugh-wink"></i>
+          <img src="{{asset('sb-user/images/logo4.png')}}" class="img-fluid"
+        width="100px">
         </div>
-        <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+        <div class="sidebar-brand-text mx-3">Perfect <sup>wedding</sup></div>
       </a>
 
       <!-- Divider -->
@@ -43,7 +51,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="{{('dashboard')}}">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -107,7 +115,7 @@
             <div class="input-group">
               <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
               <div class="input-group-append">
-                <button class="btn btn-primary" type="button">
+                <button class="btn btn-info" type="button">
                   <i class="fas fa-search fa-sm"></i>
                 </button>
               </div>
@@ -288,7 +296,7 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Your Website 2019</span>
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> create  <i class="icon-heart text-danger" aria-hidden="true"></i> by Perfect (Myanmar IT Students)
           </div>
         </div>
       </footer>
@@ -340,7 +348,16 @@
   <!-- Page level custom scripts -->
   <script src="{{asset('sb_admin/js/demo/chart-area-demo.js')}}"></script>
   <script src="{{asset('sb_admin/js/demo/chart-pie-demo.js')}}"></script>
+
+  <script src="{{asset('sb_admin/js/demo/datatables-demo.js')}}"></script>
+
   <script src="{{asset('select/js/select2.min.js')}}"></script>
+
+  <script src="{{asset('sb_admin/datatables/jquery.dataTables.min.js')}}"></script>
+
+ <script src="{{asset('sb_admin/datatables/dataTables.bootstrap4.min.js')}}"></script>
+
+  <script src="{{asset('sb_admin/js/demo/datatables-demo.js')}}"></script>
 
   @yield('script')
 </body>
