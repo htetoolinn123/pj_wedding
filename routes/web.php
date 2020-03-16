@@ -16,16 +16,25 @@ Route::get('/', function () {
 });
 
 Route::group([
+  'middleware'=> 'auth',
   'prefix' => 'backend',
 ],function(){
 
-  Route::get('/dashboard','BackendController@dashboard');
+  Route::get('/dashboard','BackendController@dashboard')->name('dashboard');
 
   Route::resource('/items','ItemController');
 
   Route::resource('/services','ServiceController');
 
   Route::resource('/packages','PackageController');
+
+  Route::get('/bookingdetail/{id}','BookController@bookingdetail')->name('bookingdetail');
+
+  Route::get('/bookings','BookController@index')->name('bookings');
+
+  Route::get('/bookingdetails/{id}','BookController@store')->name('bookingdetails');
+
+  Route::get('/userdetail/{id}','BookController@userdetail')->name('userdetail');
 });
 
 
@@ -49,6 +58,15 @@ Route::group([
   
 
   Route::post('/itembyservice','AjaxController@getitem')->name('getitem');
+
+
+
+   
+
+    
+
+  Route::post('/booking','BookController@store')->name('booking');
+
 
 
 

@@ -5,7 +5,7 @@
 
 	<h1 class="h3 mb-4 text-gray-800">
 	  		<i class="fas fa-list-alt pr-3"></i> 
-	  		Item List
+	  		Booking List
 	  	</h1>
 
 		<div class=" mb-4">
@@ -17,14 +17,9 @@
 			            </h4>
 					</div>
 
-					<div class="col-2">
-						<a href="{{route('items.create')}}" class="btn btn-info btn-block float-right"> 
-		            		<i class="fa fa-plus "></i>	Add New 
-		            	</a>
-					</div>
+					
 				</div>
 	        </div>
-
 
 	        <div class="card shadow mb-4">
             
@@ -33,34 +28,39 @@
                 <table class=" text-center table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 	<thead>
 						<tr>
-							<td>No</td>
-							<td>Name</td>
-							<td>Photo</td>
-							<td>Price</td>		
-							<td>Service</td>
-							<td>Action</td>
+							<th>No</th>
+							<th>Package_Name</th>
+							<th>User_Name</th>
+							
+							<th>Total</th>
+							<th>Wedding Date</th>
+
+							<th>Action</th>
 						</tr>
 					</thead>
 					<tbody>
 					@php $i=1; @endphp
-					@foreach($items as $row)
+					@foreach($booking as $row)
 					<tr>
 						<td>{{$i++}}</td>
-						<td>{{$row->name}}</td>
-						<td><img src="{{$row->photo}}" class="img-fluid" style="width: 70px; height: 70px;"></td>
-						<td>{{$row->price}}</td>
-						<td>{{$row->service->name}}</td>
+						<td>{{$row->package->name}}</td>
+                        <td>{{$row->user->name}}</td> 
+                         
+						<td>{{$row->total}}</td>
+						<td>{{$row->date}}</td>
+						
+						 
+		
 						<td>
-							<form method="POST" action="{{route('items.destroy',$row->id)}}" onsubmit="return confirm('Are you sure?')">
-										@csrf
-										@method('DELETE')
-									<a href="{{route('items.edit',$row->id)}}" class="btn btn-warning">
-										<i class="fas fa-edit"></i>
-									</a>
-									<button class="btn btn-danger">
-										<i class="fas fa-trash"></i>
-									</button>
-									</form>
+							<a href="{{route('bookingdetail',$row->id)}}" class="btn btn-info">
+								<i class="fas fa-info"></i>
+							</a>
+						</td>
+						
+						
+						
+						</a>
+									
 						</td>
 					</tr>
 					@endforeach

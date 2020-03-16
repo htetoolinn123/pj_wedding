@@ -8,6 +8,10 @@ use App\Service;
 
 class ItemController extends Controller
 {
+    public function __construct($value='')
+    {
+        $this->middleware('role:Admin');
+    }
     /**
      * Display a listing of the resource.
      *

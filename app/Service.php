@@ -18,4 +18,12 @@ class Service extends Model
    		return $this->belongsToMany('App\Package')
    					->withTimestamps();
    }
+   public function bookingdetails($value='')
+   {
+        return $this->hasMany('App\Bookingdetail');
+   }
+      public function bookings($value='')
+   {
+        return $this->hasMany('App\Booking');
+   }
 }

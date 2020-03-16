@@ -63,20 +63,60 @@
 
               <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav ml-auto ">
+                    
                   <li><a href="{{route('main')}}" class="nav-link ">Home</a></li>
-                  <li><a href="{{route('package')}}" class="nav-link">Packages</a></li>
+                  <li><a href="{{route('package')}}" class="nav-link dd2">Packages</a></li>
                   <li><a href="{{route('photography')}}" class="nav-link">Photography</a></li>
                   <li><a href="{{route('contact')}}" class="nav-link">Contact</a></li>
-                  <li><a href="{{route('book')}}" class="nav-link">Booking</a></li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">More</a>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="{{route('blog')}}">Blog</a>
-                        <a class="dropdown-item" href="{{route('about')}}">About</a>
-                        <a class="dropdown-item" href="{{route('faq')}}">Faqs</a>
-                      </div>
-                       
-                    </li>
+                  <li>
+                    <a href="{{route('book')}}" class="nav-link">
+                      <i class="fas fa-shopping-cart"></i>
+                      <span id="booking" class="badge badge-pill badge-light badge-notify bookingcart">
+                      </span>
+                      Book
+                    </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">More</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="{{route('blog')}}">Blog</a>
+                      <a class="dropdown-item" href="{{route('about')}}">About</a>
+                      <a class="dropdown-item" href="{{route('faq')}}">Faqs</a>
+                    </div>
+                     
+                  </li>
+                  @role('Admin')
+                  <li><a href="{{route('dashboard')}}" class="nav-link ">Admin Managemnet</a></li>
+                  @endrole
+
+                            @guest            
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            </li>
+                            @if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                </li>
+                            @endif
+                        @else
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
+                        @endguest
 
                 </ul>
               </nav>
@@ -95,20 +135,39 @@
 
 
 
-        <div class="container">
-          <div class="row mt-3">
-            <div class="col-md-4 col-sm-12">
+        <div class="container-fluid">
+          <div class="row ">
+
+      <div class="col-lg-12">
+        
+
+        
+      
+
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.68694262748!2d96.1720107141201!3d16.84187968840766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c19316863d2c15%3A0x2b17a1a8536c1ebe!2sAroma%20Zulu%20Wedding%20One%20Stop%20Service%20Center!5e0!3m2!1sen!2smm!4v1583300333908!5m2!1sen!2smm" width="300" height="125" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             </div>
+         
+     
 
 
-            <div class="col-md-4 col-sm-12">
+       
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
               <p class="text-white" style=""><i class="fas fa-map-marker-alt pr-2" ></i> No(64),Mayangone Township, Yangon</p>
               <p class="text-white" style=""><i class="fas fa-phone-square-alt pr-2"></i> +959 797 731 911</p>
               <p class="text-white" style=""><i class="fas fa-envelope pr-2"></i> perfectweddingservice@gmail.com</p>
             </div>
+        
+     
 
-            <div class="col-md-4 col-sm-12">
+            
+
+         
+              <div class="col-lg-4 col-md-12 col-sm-12 mt-3">
+
+             <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12">
               <ul class="nav ">
                 <li class="nav-item">
                   <a class="nav-link active" href="{{route('main')}}">Home</a>
@@ -132,8 +191,13 @@
                   <a class="nav-link" href="{{route('blog')}}">Blog</a>
                 </li>   
               </ul>
+            </div>
+          </div>
 
-              <div class="col-12 text-dark">
+
+
+              <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 text-dark">
                 <a href=""><i class="fab fa-facebook-square fa-2x p-2 text-white"></i></a>
                 <a href=""><i class="fab fa-twitter-square fa-2x p-2 text-white"></i></a>
                 <a href=""><i class="fab fa-instagram fa-2x p-2 text-white"></i></a>
@@ -142,11 +206,21 @@
 
             </div>
 
-          </div>
-        </div>
-        <hr>
-        <div class="row text-center pt-3">
-          <div class="col-md-12">        
+            </div>
+            
+       
+
+
+            
+
+
+
+              </div> <!--   row-end -->
+     <hr>
+
+
+     <div class="row text-center pt-3">
+          <div class="col-md-12 col-lg-12 col-sm-12">        
             <p class="text-dark">
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
               Copyright &copy;<script>document.write(new Date().getFullYear());</script> create  <i class="icon-heart text-danger" aria-hidden="true"></i> by Perfect (Myanmar IT Students)
@@ -155,6 +229,17 @@
           </div>
         </div>
 
+
+
+
+          </div>  <!-- col-end -->
+
+          </div>
+
+         </div>   
+        </div>
+       
+        
 
 
       </div>

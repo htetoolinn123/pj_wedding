@@ -15,25 +15,25 @@ class AjaxController extends Controller
     	//dd($pid);
     	if(request('pname')=="Wedding Halls"){
     		//var_dump($pid);
-    		if(request('pid')=="Diamond")
+    		if(request('packagename')=="Diamond")
     		{
     			$item = Item::where('service_id',$id)
     						->where('price', '>=',25000000)->get();
     		}
-    		if(request('pid')=="Platinum")
+    		if(request('packagename')=="Platinum")
     		{
     			$item = Item::where('service_id',$id)
     						->where('price', '<',25000000)
     						->where('price', '>=',20000000)->get();
     		}
-    		if(request('pid')=="Gold")
+    		if(request('packagename')=="Gold")
     		{
     			$item = Item::where('service_id',$id)
     						->where('price', '>=',15000000)
     						->where('price', '<',20000000)
     						->get();
     		}
-    		if(request('pid')=="Silver")
+    		if(request('packagename')=="Silver")
     		{
     			$item = Item::where('service_id',$id)
     						->where('price', '>=',10000000)
@@ -46,7 +46,13 @@ class AjaxController extends Controller
     	}
     	//dd($item);
     	
-    	return $item;
+    	//return $item;
+
+        return response()->json([
+            'item' => $item,
+            'pid' => $pid
+        ]);
+
 
     }
 }

@@ -28,8 +28,8 @@
         <img src="{{asset('sb-user/images/logo1.png')}}" class="img-fluid"
         width="300px">
       </div>
-      <div class="col-lg-8 col-md-4 col-sm-12 mt-5">
-        <p class="p"><span style="font-weight: bolder;">Perfect Wedding Service</span> ကို ၂၀၁၂ ခုနှစ်တွင်စတင်တည်ထောင်ခဲ့ပြီးမင်္ဂလာဆောင်နှင့်ပတ်သတ်သောဝန်ဆောင်မှုလုပ်ငန်းများကို ဆောင်ရွှတ်ပေးလျက်ရှိပါသည်။ customerများရဲ့ စိတ်ကျေနပ်မှုရရှိအောင်အကောင်းဆုံးကြိုးစား၍ဝန်ဆောင်မှုများပေးလျက်ရှိပီး ၊ customer များရဲ့ တန်ဖိုးအရှိဆုံးအမှတ်တရများ နှင့် အိမ်မက်များကို သိမ်းဆည်းထားနိုင်အောင် ကြိုးစားပေးမည်ဖြစ်သည်။</p>
+      <div class="col-lg-8 col-md-8 col-sm-12 mt-5">
+        <p class="p"><span style="font-weight: bolder;">Perfect Wedding Service</span> ကို ၂၀၁၂ ခုနှစ်တွင်စတင်တည်ထောင်ခဲ့ပြီးမင်္ဂလာဆောင်နှင့်ပတ်သတ်သောဝန်ဆောင်မှုလုပ်ငန်းများကိုဆောင်ရွှတ်ပေးလျက်ရှိပါသည်။ customerများရဲ့စိတ်ကျေနပ်မှုရရှိအောင်အကောင်းဆုံးကြိုးစား၍ဝန်ဆောင်မှုများပေးလျက်ရှိပီး၊customerများရဲ့တန်ဖိုးအရှိဆုံးအမှတ်တရများ နှင့် အိမ်မက်များကို သိမ်းဆည်းထားနိုင်အောင် ကြိုးစားပေးမည်ဖြစ်သည်။</p>
       </div>
     </div>
   </div>
@@ -129,7 +129,7 @@
   <!------------------Silver------------------------>
 
   <div class="col-lg-3 col-md-6 col-sm-12 my-3" >
-      <div class="card" style="border-radius: 10px; " id="box">
+      <div class="card" style="border-radius: 10px;" id="box">
            <div class="a img-fluid display-none">
              <div style="background-color:#F9A405; height: 60px; padding-top: 10px;text-align: center;border-radius: 10px 10px 0px 0px;" ><h2>Silver</h2></div>
            </div> 
@@ -153,51 +153,61 @@
     
   </div>
   <hr class="hr">
-  <div class="container-fluid" align="center">
+  <div class="container" align="center">
     <div class="col-md-7 text-center mx-auto mt-5 pt-4">
       <h2 class="serif">Our Blogs</h2>
     </div>
+
     <div class="row mt-4">
       <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
-        <div class="card" style="width: 18rem; height: 450px;" id="box">
-          <img src="{{asset('sb-user/images/ring.jpg')}}" class="card-img-top" alt="...">
+        <div class="card" style="border-radius: 10px; height: 450px;" id="box">
+          <img src="{{asset('sb-user/images/ring.jpg')}}" class="card-img-top" style="border-radius: 10px 10px 0px 0px;" alt="..."> 
           <div class="card-body">
-            <p class=" p card-title">သမိုင်းကြောင်းနက်နဲခဲ့တဲ့ လက်ထပ်လက်စွပ်များ</p>
+            <p class=" p card-title">သမိုင်းကြောင်းနက်နဲခဲ့တဲ့လက်ထပ်လက်စွပ်များ</p>
             <p class="card-text">လွန်ခဲ့တဲ့နှစ်ပေါင်း ၅၀၀၀ လောက်က အီဂျစ်နိုင်ငံမှာ    လက်ထပ်လက်စွပ်တွေကို 
             ကျူပင်တွေ သားရေတွေနဲ့...</p>
+          </div>
+          <div class="card-footer">
             <a href="{{route('blog')}}" class="btn btn-primary">Go to Blog</a>
           </div>
         </div>
       </div>
 
       <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
-        <div class="card" style="width: 18rem; height: 450px;" id="box">
-          <img src="{{asset('sb-user/images/couple.jpg')}}" class="card-img-top" alt="...">
+        <div class="card" style="border-radius: 10px;height: 450px;" id="box">
+          <img src="{{asset('sb-user/images/couple.jpg')}}" class="card-img-top" style="border-radius: 10px 10px 0px 0px;" alt="...">
           <div class="card-body">
-            <p class=" p card-title">မိမိ crush နေသောကောင်မလေးဆီမှ အမှတ်ယူနည်း သုံးနည်း</p>
-            <p class="card-text">ပထမအချက်ကတော့ ကိုယ်crush နေတဲ့ကောင်မလေး ဆီကအဆက်အသွယ်လည်း ရှိနေခဲ့မယ်ဆိုရင်...</p>
+            <p class=" p card-title">မိမိcrushနေသောကောင်မလေးဆီမှအမှတ်ယူနည်းသုံးနည်း</p>
+            <p class="card-text">ပထမအချက်ကတော့ ကိုယ်crush နေတဲ့ကောင်မလေး ဆီက...</p>
+          </div>
+          <div class="card-footer">
             <a href="{{route('blog')}}" class="btn btn-primary">Go to Blog</a>
           </div>
         </div>
       </div>
 
       <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
-        <div class="card" style="width: 18rem; height: 450px;" id="box">
-          <img src="{{asset('sb-user/images/marry.jpg')}}" class="card-img-top" alt="...">
+        <div class="card"  style="border-radius: 10px; height: 450px;" id="box">
+          <img src="{{asset('sb-user/images/marry.jpg')}}" class="card-img-top" style="border-radius: 10px 10px 0px 0px;" alt="...">
           <div class="card-body">
-            <p class=" p card-title">လက်ထပ်ဖို့ အကောင်းဆုံး အရွယ်</p>
-            <p class="card-text">(၁)သင်ဟာရင့်ကျက်နေပါပြီ (၂)ပျော်ရွှင်မှုတွေကိုတစ်ယောက်တည်းခံစားပြီးပြီ (၃)ကလေးကိုပျိုးထောင်ဖို့နားလည်နေပြီ (၄) ငွေကြေးအတည်တကျရှိနေပြီ။</p>
+            <p class=" p card-title">လက်ထပ်ဖို့အကောင်းဆုံးအရွယ်</p>
+            <p class="card-text">(၁)သင်ဟာရင့်ကျက်နေပါပြီ (၂)ပျော်ရွှင်မှုတွေကိုတစ်ယောက်တည်းခံစားပြီးပြီ (၃)ကလေးကိုပျိုးထောင်ဖို့...</p>
+          </div>
+          <div class="card-footer">
             <a href="{{route('blog')}}" class="btn btn-primary">Go to Blog</a>
           </div>
         </div>
       </div>
 
       <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
-        <div class="card" style="width: 18rem; height: 450px;" id="box">
-          <img src="{{asset('sb-user/images/hand.jpg')}}" class="card-img-top" alt="...">
+        <div class="card"  style="border-radius: 10px; height: 450px;" id="box">
+          <img src="{{asset('sb-user/images/hand.jpg')}}" class="card-img-top" style="border-radius: 10px 10px 0px 0px;" alt="...">
           <div class="card-body">
-            <p class=" p card-title">မိန်းကလေးများအတွက် စေ့စပ်အပြီး Relationship ထိန်းသိမ်းနည်းများ</p>
+            <p class=" p card-title">မိန်းကလေးများအတွက်စေ့စပ်အပြီးRelationshipထိန်းသိမ်းနည်းများ</p>
             <p class="card-text">ကျွန်တော်ကယောကျ်ားလေးဖြစ်တဲ့အတွက် Relationship ခိုင်မြဲ...</p>
+            
+          </div>
+          <div class="card-footer">
             <a href="{{route('blog')}}" class="btn btn-primary">Go to Blog</a>
           </div>
         </div>
@@ -207,22 +217,22 @@
 
   <hr class="hr">
 
-  <div class="container-fluid">
+  <div class="container">
     <div class="col-md-7 text-center mx-auto mt-5 pt-4">
       <h2 class="serif">Our Photo Studio</h2>
     </div>
     <div class="row mt-2  mx-4 pt-4">
       <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
-        <img src="{{asset('sb-user/images/p1.jpg')}}" class="img-fluid img" width="400px">
+        <img src="{{asset('sb-user/images/p1.jpg')}}" class="img-fluid img" width="100%" id="box">
       </div>
       <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
-        <img src="{{asset('sb-user/images/p2.jpg')}}" class="img-fluid img" width="400px">
+        <img src="{{asset('sb-user/images/p2.jpg')}}" class="img-fluid img" width="100%" id="box">
       </div>
       <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
-        <img src="{{asset('sb-user/images/p3.jpg')}}" class="img-fluid img" width="400px">
+        <img src="{{asset('sb-user/images/p3.jpg')}}" class="img-fluid img" width="100%" id="box">
       </div>
       <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
-        <img src="{{asset('sb-user/images/p4.jpg')}}" class="img-fluid img" width="400px">
+        <img src="{{asset('sb-user/images/p4.jpg')}}" class="img-fluid img" width="100%" id="box">
       </div>
     </div>
 

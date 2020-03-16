@@ -3,7 +3,7 @@
 @section('content')
 	
 		<div class="container-fluid mt-3">
-			<h2 class="text-center">Item Create Form</h2>
+			<h2 class="text-center">Item Edit Form</h2>
 	            <form action="{{route('items.update',$item->id)}}" method="POST" enctype="multipart/form-data" class="mt-4">
 	            	@csrf
 	            	@method('PUT')

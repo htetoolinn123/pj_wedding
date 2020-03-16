@@ -3,9 +3,10 @@
 @section('content')
 
 <div class="container-fluid mt-3">
-	<h2 class="text-center">Package Create Form</h2>
+	<h2 class="text-center">Package Edit Form</h2>
 	<form action="{{route('packages.update',$package->id)}}" method="POST">
 		@csrf
+		@method('PUT')
 	  <div class="form-row">
 	    <div class="form-group col-md-6">
 	      <label for="inputEmail4">Package Name</label>

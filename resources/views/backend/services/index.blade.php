@@ -22,7 +22,7 @@
 
 					<div class="col-2">
 						<a href="{{route('services.create')}}" class="btn btn-info btn-block float-right"> 
-		            		<i class="fa fa-plus pr-2"></i>	Add New 
+		            		<i class="fa fa-plus"></i>	Add New 
 		            	</a>
 					</div>
 				</div>

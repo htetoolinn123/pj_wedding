@@ -10,7 +10,12 @@ class Package extends Model
 
     public function services($value='')
    {
-   		return $this->belongsToMany('App\Service')
-   					->withTimestamps();
+      return $this->belongsToMany('App\Service')
+            ->withTimestamps();
+   }
+
+   public function bookings($value='')
+   {
+        return $this->hasMany('App\Booking');
    }
 }

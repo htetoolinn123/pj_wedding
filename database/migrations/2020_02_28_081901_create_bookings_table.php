@@ -18,7 +18,8 @@ class CreateBookingsTable extends Migration
             $table->unsignedBigInteger('user_id');
             $table->integer('total');
             $table->date('date');
-            $table->string('time');
+            $table->string('start_time');
+            $table->string('end_time');
             $table->unsignedBigInteger('package_id');
             $table->text('notes');
             $table->timestamps();

@@ -49,7 +49,7 @@ background-attachment: fixed;
 				<div class="col-lg-12 col-md-12 col-sm-12 ">
 
 					<form action="" method="POST">
-						@csrf
+						
 						<div class="form-row">
 							<!-- from div col open -->
 							<div class="form-group col-lg-6 col-md-6 col-sm-12 my-4">
@@ -93,10 +93,10 @@ background-attachment: fixed;
 
 						
 							<div class="col-sm-4 col-lg-4 col-md-4 col-xs-4 form-group">
-								<button type="submit" class="btn btn-primary ">
+								<a href="" class="btn btn-primary ">
 							<i class="fas fa-paper-plane pr-3"></i>
 									 Send
-								</button>
+								</a>
 	                    	</div>
 					  
 					</form>

@@ -7,6 +7,10 @@ use App\Package;
 use App\Service;
 class PackageController extends Controller
 {
+    public function __construct($value='')
+    {
+        $this->middleware('role:Admin');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -95,7 +99,7 @@ class PackageController extends Controller
         $package->name = request('name');
         $package->save();
 
-        $package->services()->attach(request('service'));
+        $package->services()->sync(request('service'));
 
         return redirect()->route('packages.index');
     }
