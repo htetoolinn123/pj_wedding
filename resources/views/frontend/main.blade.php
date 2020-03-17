@@ -160,7 +160,8 @@
 
     <div class="row mt-4">
       <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
-        <div class="card" style="border-radius: 10px; height: 450px;" id="box">
+        <div class="card h-100" style="border-radius: 10px;" id="box">
+  
           <img src="{{asset('sb-user/images/ring.jpg')}}" class="card-img-top" style="border-radius: 10px 10px 0px 0px;" alt="..."> 
           <div class="card-body">
             <p class=" p card-title">သမိုင်းကြောင်းနက်နဲခဲ့တဲ့လက်ထပ်လက်စွပ်များ</p>
@@ -174,7 +175,7 @@
       </div>
 
       <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
-        <div class="card" style="border-radius: 10px;height: 450px;" id="box">
+        <div class="card h-100" style="border-radius: 10px;" id="box">
           <img src="{{asset('sb-user/images/couple.jpg')}}" class="card-img-top" style="border-radius: 10px 10px 0px 0px;" alt="...">
           <div class="card-body">
             <p class=" p card-title">မိမိcrushနေသောကောင်မလေးဆီမှအမှတ်ယူနည်းသုံးနည်း</p>
@@ -187,7 +188,7 @@
       </div>
 
       <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
-        <div class="card"  style="border-radius: 10px; height: 450px;" id="box">
+        <div class="card h-100"  style="border-radius: 10px;" id="box">
           <img src="{{asset('sb-user/images/marry.jpg')}}" class="card-img-top" style="border-radius: 10px 10px 0px 0px;" alt="...">
           <div class="card-body">
             <p class=" p card-title">လက်ထပ်ဖို့အကောင်းဆုံးအရွယ်</p>
@@ -200,7 +201,7 @@
       </div>
 
       <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
-        <div class="card"  style="border-radius: 10px; height: 450px;" id="box">
+        <div class="card h-100"  style="border-radius: 10px;" id="box">
           <img src="{{asset('sb-user/images/hand.jpg')}}" class="card-img-top" style="border-radius: 10px 10px 0px 0px;" alt="...">
           <div class="card-body">
             <p class=" p card-title">မိန်းကလေးများအတွက်စေ့စပ်အပြီးRelationshipထိန်းသိမ်းနည်းများ</p>

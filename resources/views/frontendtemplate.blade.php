@@ -54,7 +54,7 @@
               </div>
             </div>
 
-            <div class="col-9  text-right">
+            <div class="col-9 col-xs-9 text-right">
               
 
               <span class="d-inline-block d-lg-none"><a href="#" class="text-white site-menu-toggle js-menu-toggle py-5 text-white"><span class="icon-menu h3 text-white"></span></a></span>
