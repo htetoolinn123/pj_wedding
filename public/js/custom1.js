@@ -35,11 +35,11 @@ $(document).ready(function(){
 								  </div>
 								  <div class="card-footer text-muted">`
 
-								  if(service_id==2){
-								  	html+= `<input class="form-check-input addtocartr" type="radio"  id="${v.id} " value="${v.id}" data-pid="${pid}" data-id="${v.id}" data-photo="${v.photo}" data-price="${v.price}" data-name="${v.name}" name="hall">
+								  if(service_id==1){
+								  	html+= `<input class="form-check-input addtocartr " type="radio"  id="${v.id} " value="${v.id}" data-pid="${pid}" data-id="${v.id}" data-photo="${v.photo}" data-price="${v.price}" data-name="${v.name}"  name="hall">
   										<label class="form-check-label" for="${v.id}">BOOK</label>`
   									}else{
-								  html+= `<input class="form-check-input addtocart" type="checkbox" id="${v.id}" value="${v.id}" data-pid="${pid}" data-id="${v.id}" data-photo="${v.photo}" data-price="${v.price}" data-name="${v.name}">
+								  html+= `<input class="form-check-input addtocart " type="checkbox"  id="${v.id}" value="${v.id}" data-pid="${pid}" data-id="${v.id}" data-photo="${v.photo}" data-price="${v.price}" data-name="${v.name}">
   										<label class="form-check-label" for="${v.id}">BOOK</label>`
   									}
 
@@ -56,7 +56,7 @@ $(document).ready(function(){
 
 			})
 
-
+			
 
 			showmyitem();
 			$(".showitem").on('click', '.addtocart', 
@@ -179,6 +179,8 @@ $(document).ready(function(){
 				
 			})
 
+			
+
 			function showmyitem(){
 				var itemString = localStorage.getItem("items");
 				if(itemString){
@@ -220,6 +222,9 @@ $(document).ready(function(){
 				$('#total').text(total);
 				$('.bookingcart').text(bookingcart);
 			}
+
+
+
 
 			$("#tbody").on('click', '.remove',
 			function(){

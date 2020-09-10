@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 4.9.4
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Mar 16, 2020 at 09:09 AM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.1
+-- Host: localhost:3306
+-- Generation Time: Sep 04, 2020 at 09:39 PM
+-- Server version: 10.3.20-MariaDB-cll-lve
+-- PHP Version: 7.3.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `wedding`
+-- Database: `htetoolinn_wed`
 --
 
 -- --------------------------------------------------------
@@ -120,20 +120,20 @@ CREATE TABLE `items` (
 --
 
 INSERT INTO `items` (`id`, `name`, `photo`, `price`, `service_id`, `created_at`, `updated_at`) VALUES
-(2, 'Planning', '/storage/item/1583208461.jpg', 300000, 1, '2020-03-02 03:17:03', '2020-03-02 21:43:30'),
-(3, 'San Francisco', '/storage/item/1583208491.jpg', 200000, 1, '2020-03-02 03:20:00', '2020-03-02 21:43:07'),
-(4, 'Marbella', '/storage/item/1583208525.jpg', 200000, 1, '2020-03-02 03:20:45', '2020-03-02 21:42:58'),
-(5, 'Newsletter', '/storage/item/1583208768.jpg', 200000, 1, '2020-03-02 03:21:33', '2020-03-02 22:24:58'),
-(6, 'Graffin Cateing', '/storage/item/1583208853.jpg', 250000, 1, '2020-03-02 03:22:32', '2020-03-02 21:44:13'),
-(7, 'Banquet', '/storage/item/1583208883.jpg', 100000, 1, '2020-03-02 03:23:29', '2020-03-02 21:44:43'),
-(9, 'Mainson', '/storage/item/1583208914.jpg', 400000, 1, '2020-03-02 03:26:31', '2020-03-02 21:45:14'),
-(10, 'Strawberry Cake', '/storage/item/1583208949.jpeg', 30000, 1, '2020-03-02 03:27:56', '2020-03-02 21:45:49'),
-(11, 'Sedona Hotel', '/storage/item/1583208967.jpg', 25000000, 2, '2020-03-02 03:32:04', '2020-03-02 21:49:10'),
-(12, 'Chatrium Hotel', '/storage/item/1583208982.jpg', 22000000, 2, '2020-03-02 03:33:31', '2020-03-03 21:49:10'),
-(13, 'R.Garden Hotel', '/storage/item/1583208996.jpg', 15000000, 2, '2020-03-02 03:34:22', '2020-03-02 22:25:17'),
-(14, 'Novotel Hotel', '/storage/item/1583209006.jpg', 28000000, 2, '2020-03-02 03:37:43', '2020-03-03 21:47:53'),
-(15, 'Lotte Hotel', '/storage/item/1583209018.jpg', 24000000, 2, '2020-03-02 03:40:38', '2020-03-03 21:49:27'),
-(16, 'Jasmine Hotel', '/storage/item/1583209034.jpg', 17000000, 2, '2020-03-02 03:41:51', '2020-03-03 21:50:26'),
+(2, 'Planning', '/storage/item/1583208461.jpg', 300000, 2, '2020-03-02 03:17:03', '2020-07-27 07:15:21'),
+(3, 'San Francisco', '/storage/item/1583208491.jpg', 200000, 2, '2020-03-02 03:20:00', '2020-07-27 07:15:50'),
+(4, 'Marbella', '/storage/item/1583208525.jpg', 200000, 2, '2020-03-02 03:20:45', '2020-07-27 07:15:58'),
+(5, 'Newsletter', '/storage/item/1583208768.jpg', 200000, 2, '2020-03-02 03:21:33', '2020-07-27 07:16:07'),
+(6, 'Graffin Cateing', '/storage/item/1583208853.jpg', 250000, 2, '2020-03-02 03:22:32', '2020-07-27 07:16:14'),
+(7, 'Banquet', '/storage/item/1583208883.jpg', 100000, 2, '2020-03-02 03:23:29', '2020-07-27 07:16:22'),
+(9, 'Mainson', '/storage/item/1583208914.jpg', 400000, 2, '2020-03-02 03:26:31', '2020-07-27 07:16:32'),
+(10, 'Strawberry Cake', '/storage/item/1583208949.jpeg', 30000, 2, '2020-03-02 03:27:56', '2020-07-27 07:16:41'),
+(11, 'Sedona Hotel', '/storage/item/1583208967.jpg', 25000000, 1, '2020-03-02 03:32:04', '2020-07-27 07:16:51'),
+(12, 'Chatrium Hotel', '/storage/item/1583208982.jpg', 22000000, 1, '2020-03-02 03:33:31', '2020-07-27 07:16:58'),
+(13, 'R.Garden Hotel', '/storage/item/1583208996.jpg', 15000000, 1, '2020-03-02 03:34:22', '2020-07-27 07:17:09'),
+(14, 'Novotel Hotel', '/storage/item/1583209006.jpg', 28000000, 1, '2020-03-02 03:37:43', '2020-07-27 07:17:23'),
+(15, 'Lotte Hotel', '/storage/item/1583209018.jpg', 24000000, 1, '2020-03-02 03:40:38', '2020-07-27 07:17:39'),
+(16, 'Jasmine Hotel', '/storage/item/1583209034.jpg', 17000000, 1, '2020-03-02 03:41:51', '2020-07-27 07:17:58'),
 (17, 'Khin San Win MakeUp', '/storage/item/1583209068.jpg', 500000, 6, '2020-03-02 03:42:42', '2020-03-02 21:47:48'),
 (18, 'Htet Htet Make-Up', '/storage/item/1583209337.jpg', 500000, 6, '2020-03-02 03:43:22', '2020-03-02 21:52:17'),
 (19, 'Calvin Wai Yan Make-Up', '/storage/item/1583209972.png', 400000, 6, '2020-03-02 03:44:21', '2020-03-02 22:02:52'),
@@ -155,14 +155,14 @@ INSERT INTO `items` (`id`, `name`, `photo`, `price`, `service_id`, `created_at`,
 (39, 'Aroma', '/storage/item/1583145365.jpg', 300000, 4, '2020-03-02 04:06:05', '2020-03-02 04:06:05'),
 (40, 'KTK Photo', '/storage/item/1583209954.jpg', 400000, 4, '2020-03-02 04:06:53', '2020-03-02 22:02:34'),
 (41, 'Sweet Heart', '/storage/item/1583145465.jpg', 300000, 4, '2020-03-02 04:07:45', '2020-03-02 04:07:45'),
-(42, 'Hoya Hotel', '/storage/item/1583209285.jpg', 12000000, 2, '2020-03-02 21:51:25', '2020-03-03 21:52:00'),
-(43, 'Angel Hotel', '/storage/item/1583217980.jpg', 10000000, 2, '2020-03-03 00:16:20', '2020-03-03 00:16:20'),
+(42, 'Hoya Hotel', '/storage/item/1583209285.jpg', 12000000, 1, '2020-03-02 21:51:25', '2020-07-27 07:34:36'),
+(43, 'Angel Hotel', '/storage/item/1583217980.jpg', 10000000, 1, '2020-03-03 00:16:20', '2020-07-27 07:36:05'),
 (44, 'Ko Kyaw Htet Aung', '/storage/item/1583228375.jpg', 250000, 8, '2020-03-03 03:09:35', '2020-03-03 03:10:36'),
-(45, 'Victory  Hotel', '/storage/item/1583295188.jpg', 30000000, 2, '2020-03-03 21:43:08', '2020-03-03 21:48:12'),
-(46, 'Sakura Hotel', '/storage/item/1583295225.jpg', 20000000, 2, '2020-03-03 21:43:45', '2020-03-03 21:52:52'),
-(47, 'Cupid Hotel', '/storage/item/1583295257.jpg', 19000000, 2, '2020-03-03 21:44:17', '2020-03-03 21:50:11'),
-(48, 'Brilliant Hotel', '/storage/item/1583295289.jpg', 14000000, 2, '2020-03-03 21:44:49', '2020-03-03 21:52:11'),
-(49, 'CAKES', '/storage/item/1583305502.jpeg', 12000000, 1, '2020-03-04 00:35:02', '2020-03-04 00:35:02');
+(45, 'Victory  Hotel', '/storage/item/1583295188.jpg', 30000000, 1, '2020-03-03 21:43:08', '2020-07-27 07:34:59'),
+(46, 'Sakura Hotel', '/storage/item/1583295225.jpg', 20000000, 1, '2020-03-03 21:43:45', '2020-07-27 07:35:10'),
+(47, 'Cupid Hotel', '/storage/item/1583295257.jpg', 19000000, 1, '2020-03-03 21:44:17', '2020-07-27 07:35:24'),
+(48, 'Brilliant Hotel', '/storage/item/1583295289.jpg', 14000000, 1, '2020-03-03 21:44:49', '2020-07-27 07:35:38'),
+(49, 'CAKES', '/storage/item/1583305502.jpeg', 12000000, 2, '2020-03-04 00:35:02', '2020-07-27 07:35:48');
 
 -- --------------------------------------------------------
 
@@ -224,7 +224,8 @@ INSERT INTO `model_has_roles` (`role_id`, `model_type`, `model_id`) VALUES
 (1, 'App\\User', 1),
 (2, 'App\\User', 3),
 (2, 'App\\User', 4),
-(2, 'App\\User', 5);
+(2, 'App\\User', 5),
+(2, 'App\\User', 6);
 
 -- --------------------------------------------------------
 
@@ -369,8 +370,8 @@ CREATE TABLE `services` (
 --
 
 INSERT INTO `services` (`id`, `name`, `created_at`, `updated_at`) VALUES
-(1, 'Foods', '2020-02-28 22:39:30', '2020-02-29 03:01:11'),
-(2, 'Wedding Halls', '2020-02-28 22:41:15', '2020-02-28 22:41:26'),
+(1, 'Wedding Halls', '2020-02-28 22:39:30', '2020-07-27 07:15:05'),
+(2, 'Foods', '2020-02-28 22:41:15', '2020-07-27 07:14:57'),
 (3, 'Flower and Light Decoration', '2020-02-28 22:44:33', '2020-02-28 22:44:33'),
 (4, 'Photographer & Video', '2020-02-28 22:45:09', '2020-03-02 22:14:20'),
 (5, 'Music Bands', '2020-02-28 22:45:09', '2020-02-28 22:46:10'),
@@ -402,7 +403,8 @@ INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `re
 (1, 'Admin', 'admin@gmail.com', NULL, '$2y$10$3Gp3ywRNsnkasWi2AavNpeBngPsl8edd/QTpx46RSjtxmiER52he6', NULL, '2020-03-05 04:52:17', '2020-03-05 04:52:17'),
 (3, 'customer', 'customer12@gmail.com', NULL, '$2y$10$TL8eavr/x4dDKKes92uoy.IBZpugXx6nRyd4LxJCqZodjb69iejUK', NULL, '2020-03-06 22:36:31', '2020-03-06 22:36:31'),
 (4, 'Kay Zin Soe', 'kaygyi1@gmail.com', NULL, '$2y$10$KBOGe4/ZdqRE0bRlrJnQGONFexuLP9ZMRPs18CmrweQlPb0GiC7aS', NULL, '2020-03-06 23:06:38', '2020-03-06 23:06:38'),
-(5, 'Htet Oo Linn', 'htetoolinn83@gmail.com', NULL, '$2y$10$.2aw44p/WFRf3OmM4idzXOuhOK1s9Tfq7hitD8RoS04a9gQ1hIY8O', NULL, '2020-03-08 20:33:11', '2020-03-08 20:33:11');
+(5, 'Htet Oo Linn', 'htetoolinn83@gmail.com', NULL, '$2y$10$.2aw44p/WFRf3OmM4idzXOuhOK1s9Tfq7hitD8RoS04a9gQ1hIY8O', NULL, '2020-03-08 20:33:11', '2020-03-08 20:33:11'),
+(6, 'customer', 'customer@gmail.com', NULL, '$2y$10$4gxI43Y/pfUatip4xbQ6fOUJH0jCewbsoGZBW1O.DMPXQ1UUUIfhm', NULL, '2020-07-27 06:52:29', '2020-07-27 06:52:29');
 
 --
 -- Indexes for dumped tables
@@ -577,7 +579,7 @@ ALTER TABLE `services`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- Constraints for dumped tables

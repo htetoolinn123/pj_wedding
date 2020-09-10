@@ -263,7 +263,7 @@
     <script src="{{asset('sb-user/js/aos.js')}}"></script>
 
     <script src="{{asset('sb-user/js/main.js')}}"></script>
-  <script type="text/javascript" src="{{asset('js/custom.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/custom1.js')}}"></script>
     
     @yield('script')
 
